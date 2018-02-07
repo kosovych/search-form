@@ -1,0 +1,62 @@
+@import 'glob-var/_glob-var.scss';
+
+.header{
+	background-color: $background-color-darck;
+	height: 52px;
+	
+}
+
+.user-action {
+	color: $text-color-light;
+	font-size: 13px;
+	text-transform: uppercase;
+	height: 100%;
+
+	& .row {
+		height: 51px;
+	}	
+}
+.user-action__el{
+	height: 100%;
+
+	& a {
+		display: block;
+		line-height: 51px;
+		height: 100%;
+
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+
+.user-action__el_phone {
+	background-image: url(../img/phone-ico.png);
+	background-repeat: no-repeat;
+	background-position: 15% center;
+}
+.social{
+	font-size: 0;
+}
+.social_link{
+	display: inline-block;
+	height: 51px;
+	width: 20%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.twitter {
+	background-image: url(../img/twitter.png);
+}
+.facebook {
+	background-image: url(../img/facebook.png);
+}
+.dribbble {
+	background-image: url(../img/dribbble.png);
+}
+.linkedin {
+	background-image: url(../img/linkedin.png);
+}
+.flickr {
+	background-image: url(../img/flickr.png);
+}

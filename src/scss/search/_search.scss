@@ -1,0 +1,276 @@
+@import 'glob-var/_glob-var.scss';
+
+.search {
+	background-image: url(../img/bg-search.png);
+	background-size: cover; 
+}
+
+.search-nav{
+	height: 80px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: $background-color-darck;
+	opacity: 0.65;
+
+	& .row {
+		height: 100%;
+	}
+}
+
+.search-nav__item {
+	height: 100%;
+	line-height: 4;
+	color: $text-color-light;
+	opacity: 1;
+}
+
+.search-nav__item:hover{
+	color: text-color-light;
+}
+
+.search-form-container{
+	background-color: $text-color-light;
+	padding: 0 20px;
+}
+
+.search-form {
+	margin-top: 15px;
+	margin-left: 15px;
+	width: 1020px;
+}
+.search-form-tabs {
+	font-size: 0;
+}
+
+.search-form-tabs__tab{
+	margin-right: 5px;
+	display: inline-block;
+	color: $text-color-light;
+	width:184px;
+	height:74px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 74px;
+	text-transform: uppercase;
+	background-color: $background-color-bright;
+	background-repeat: no-repeat;
+	background-position: 15% center;
+
+	&.active-tab {
+		background-color: $background-color-light;
+		color: $text-color-darkless;
+	}
+	&:hover{
+		color: $background-color-light;
+	}
+}
+
+.flight-tab {
+	padding-left: 15px;
+	background-image: url(../img/flight-ico.png);
+	&.active-tab{
+		background-image: url(../img/flight-active-ico.png);
+	}
+}
+
+.active-tab:hover{
+	color: $text-color-darkless;
+}
+
+.cruise-tab {
+	padding-left: 15px;
+
+	background-image: url(../img/cruise-ico.png);
+	&.active-tab{
+		background-image: url(../img/cruise-active-ico.png);
+	}
+}
+.hotel-tab {
+
+	background-image: url(../img/hotel-ico.png);
+	&.active-tab{
+		background-image: url(../img/hotel-active-ico.png);
+	}
+}
+
+.search-type-container {
+	width: 100%;
+
+}
+
+.flight-type{
+	font-size: 0px;
+}
+.flight-type-label {
+	font-size: 16px;
+	line-height: 83px;
+	padding-left: 40px;
+	padding-right: 10px;
+	height: 80px;
+	margin-bottom: 0;
+	display: inline-block;
+	text-transform: uppercase;
+	background-image: url(../img/uncheck.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+.flight-type input {
+	display: none;
+}
+
+input[id="flight-type-round-trip"]:checked ~ 
+.flight-type-label[for="flight-type-round-trip"]{
+	background-image: url(../img/check.png);
+}
+
+input[id="flight-type-multi-city"]:checked ~ 
+.flight-type-label[for="flight-type-multi-city"]{
+	background-image: url(../img/check.png);
+}
+
+input[id="flight-type-one-way"]:checked ~ 
+.flight-type-label[for="flight-type-one-way"]{
+	background-image: url(../img/check.png);
+}
+
+.direction_item {
+	width: 48%;
+	/*height: 60px;*/
+	display: inline-block;
+}
+.direction-container{
+	font-size: 0;
+	margin-bottom: 20px;
+}
+.direction_item{
+	padding: 8px;
+	border: 1px solid $border-color-form;
+}
+.direction-label {
+	display: block;
+	font-size: 12px;
+	padding: 0;
+	text-transform: uppercase;
+	line-height: 1;
+	padding-left: 15px;
+	color: $text-color-form-main;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+.direction-from {
+	margin-right: 36px;
+	margin-left: 0;
+}
+.direction_item input {
+	font-size: 18px;
+	display: block;
+	width: 100%;
+	color: $text-color-form;
+	border: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 5px;
+	text-transform: uppercase;
+}
+
+.direction-from .direction-label {
+	background-image: url(../img/from-ico.png);
+}
+
+.direction-to .direction-label {
+	background-image: url(../img/to-ico.png);	
+}
+
+.date-container {
+	margin: 0 auto;
+	border: 1px solid $border-color-form;
+
+}
+
+.date{
+	width: 48%;
+	display: inline-block;
+	padding: 8px;
+}
+.depature{
+	margin-right: 32px;
+}
+
+.date-input{
+	font-size: 18px;
+	display: inline-block;
+	width: 399px;
+	color: $text-color-form;
+	border: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 5px;
+	text-transform: uppercase;
+}
+
+.departure-label{
+	text-transform: uppercase;
+	display: block;
+	font-size: 12px;
+	padding: 0;
+	line-height: 1;
+	padding-left: 15px;
+	color: $text-color-form-main;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	background-image: url(../img/date-ico.png);	
+
+}
+
+.btn-container button {
+	width: 24px;
+	height: 24px;
+	background-color: $background-color-btn;
+	border: 1px solid $border-color-form;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+button[class*="inc"] {
+	background-image: url(../img/arrow-left.png);
+}
+button[class*="reduce"] {
+	background-image: url(../img/arrow-right.png);
+}
+
+.adult-amount-container{
+	height: 60px;
+	width: 48%;
+	border: 1px solid $border-color-form;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.adult-amount-label,
+.amount-btn-container {
+	display: inline-block;
+	width: 40%;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.adult-amount-label{
+	background-image: url(../img/adult-ico.png);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	background-position: 10px center;
+}
+
+.amount-btn-container{
+	text-align: center;
+	& button {
+		width: 40px;
+		height: 40px;
+		border: 1px solid $border-color-form;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $background-color-btn;
+
+	}
+}
