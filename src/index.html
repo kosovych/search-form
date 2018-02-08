@@ -51,87 +51,242 @@
 		<main class="search-wrap container">
 			<div class="search-form">
 				<div class="search-form-tabs">
-					<a href="#" class="search-form-tabs__tab flight-tab">flight</a>
-					<a href="#" class="search-form-tabs__tab cruise-tab active-tab">cruise</a>
-					<a href="#" class="search-form-tabs__tab hotel-tab">hotel</a>
+					<label for="display-search-type-flight" class="search-form-tabs__tab flight-tab">flight</label>
+					<label for="display-search-type-cruise" class="search-form-tabs__tab cruise-tab active-tab">cruise</label>
+					<label for="display-search-type-hotel" class="search-form-tabs__tab hotel-tab">hotel</label>
 				</div>
 				<div class="search-form-container">
-					<div class="search-type-container">
-						<div class="flight-type">
-							<input id="flight-type-round-trip" type="radio" name="travel-type" value="round-trip" checked>
-							<input id="flight-type-one-way" type="radio" name="travel-type" value="one-way">
-							<input id="flight-type-multi-city" type="radio" name="travel-type" value="multi-city">
-							<label class="flight-type-label" for="flight-type-round-trip">
-								round trip
-							</label>
-					
-							<label class="flight-type-label" for="flight-type-one-way">
-								one way
-							</label>
-					
-							<label class="flight-type-label" for="flight-type-multi-city">
-								multi city
-							</label>
-						</div>
-
-					<div class="direction-container">
-						<div class="direction_item direction-from">
-							<label for="direction-from" class="direction-label">from</label>
-							<input type="text" name="direction-from" id="direction-from" placeholder="city">
-						</div>
-						<div class="direction_item direction-to">
-							<label for="direction-to" class="direction-label">to</label>
-							<input type="text" name="direction-to" id="direction-to" placeholder="city">
-						</div>
-					</div>
-
-					<div class="date-container">
-						<div class="date depature">
-							<label class="departure-label" for="">departure date</label>
-							<input type="text" class="date-input" placeholder="11/12/2017"></input>
-							<div class="btn-container pull-right">
-								<button class="inc-departe-date"></button>
-								<button class="reduce-departe-date"></button>
+					<input type="radio" name="display-search-type" id="display-search-type-flight">
+					<div class="search-type-flight">
+						<div class="search-type-container">
+							<div class="flight-type">
+								<input id="flight-type-round-trip" type="radio" name="travel-type" value="round-trip" checked>
+								<input id="flight-type-one-way" type="radio" name="travel-type" value="one-way">
+								<input id="flight-type-multi-city" type="radio" name="travel-type" value="multi-city">
+								<label class="flight-type-label" for="flight-type-round-trip">
+									round trip
+								</label>
+						
+								<label class="flight-type-label" for="flight-type-one-way">
+									one way
+								</label>
+						
+								<label class="flight-type-label" for="flight-type-multi-city">
+									multi city
+								</label>
+							</div><!-- flight-type -->
+						
+						<div class="direction-container">
+							<div class="direction_item direction-from">
+								<label for="direction-from" class="direction-label">from</label>
+								<input type="text" name="direction-from" id="direction-from" placeholder="city">
+							</div>
+							<div class="direction_item direction-to">
+								<label for="direction-to" class="direction-label">to</label>
+								<input type="text" name="direction-to" id="direction-to" placeholder="city">
 							</div>
 						</div>
-						<div class="date return">
+						
+						<div class="date-container">
+							<div class="date depature">
+								<label class="departure-label" for="">departure date</label>
+								<input type="text" class="date-input" placeholder="11/12/2017"></input>
+								<div class="btn-container pull-right">
+									<button class="inc-departe-date"></button>
+									<button class="reduce-departe-date"></button>
+								</div>
+							</div>
+							<div class="date return">
+								<label class="departure-label" for="">departure return</label>
+								<input type="text" class="date-input" placeholder="11/12/2017"></input>
+								<div class="btn-container pull-right">
+									<button class="inc-return-date"></button>
+									<button class="reduce-return-date"></button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="adult-amount-container">
+							<div class="adult-amount-label">adult</div>
+							<div class="amount-btn-container">
+								<button class="inc-adult-amount"></button>
+								<span class="adult-amount">1</span>
+								<button class="reduce-adult-amount"></button>
+							</div>
+							<button class="adult-amount-btn selection-btn-to-top"></button>
+						</div>
+						
+						<div class="class-cabine-container">
+							<div class="class-cabine">
+								<div class="class-cabine-title">All Class/Cabin</div>
+								<div class="class-cabine-value">Economy class</div>
+							</div>
+						
+							<button class="class-cabine-btn selection-btn-to-top"></button>
+						</div>
+						
+						<div class="children-amount-container">
+							<div class="children-amount-label">children</div>
+							<div class="amount-btn-container">
+								<button class="inc-children-amount"></button>
+								<span class="children-amount">1</span>
+								<button class="reduce-children-amount"></button>
+							</div>
+							<button class="children-amount-btn selection-btn-to-top"></button>
+						
+						</div>
+						
+						<div class="adult-amount-container">
+							<div class="adult-amount-label">adult</div>
+							<div class="amount-btn-container">
+								<button class="inc-adult-amount"></button>
+								<span class="adult-amount">1</span>
+								<button class="reduce-adult-amount"></button>
+							</div>
+							<button class="adult-amount-btn selection-btn-to-top"></button>
+						
+						</div>
+						
+						<div class="preferred-airlines-container">
+							<div class="preferred-airlines-value">Preferred Airlines</div>
+							<button class="preferred-airlines-btn selection-btn-to-top"></button>
+						</div>
+						
+						<div class="flexible-dates-container">
+							<div class="flexible-dates-value">Flexible dates</div>
+							<button class="flexible-dates-btn selection-btn-to-top"></button>
+						</div>
+						
+						<button class="search-flight">search flight</button>
+						
+						</div>
+					</div><!-- search-type-flight -->
+					<input type="radio" name="display-search-type" id="display-search-type-cruise">
+					<div class="search-type-cruise">
+						<div class="destinations-container">
+							<div class="destinations">
+								<div class="destinations-label">destinations</div>
+								<div class="destinations-value">Caribbean</div>
+							</div>
+							<button class="destinations-btn selection-btn-to-bottom"></button>
+						</div>
+						<div class="departure-port-container">
+							<div class="departure-port">
+								<div class="departure-port-label">departur port</div>
+								<div class="departure-port-value">Miami</div>
+							</div>
+							<button class="departure-port-btn selection-btn-to-bottom"></button>
+						</div>
+						<div class="cruise-lines-container">
+							<div class="cruise-lines">
+								<div class="cruise-lines-label">cruise lines</div>
+								<div class="cruise-lines-value">Royal Caribbean</div>
+							</div>
+							<button class="cruise-lines-btn selection-btn-to-bottom"></button>
+						</div>
+						<div class="cruise-ships-container">
+							<div class="cruise-ships">
+								<div class="cruise-ships-label">cruise ships</div>
+								<div class="cruise-ships-value">Adventure of the Seas</div>
+							</div>
+							<button class="cruise-ships-btn selection-btn-to-bottom"></button>
+						</div>
+						<div class="departure-date-container">
 							<label class="departure-label" for="">departure return</label>
-							<input type="text" class="date-input" placeholder="11/12/2017"></input>
-							<div class="btn-container pull-right">
-								<button class="inc-return-date"></button>
-								<button class="reduce-return-date"></button>
+								<input type="text" class="date-input" placeholder="11/12/2017"></input>
+								<div class="btn-container pull-right">
+									<button class="inc-return-date"></button>
+									<button class="reduce-return-date"></button>
+								</div>
+						</div>
+						<div class="length-container">
+							<div class="length">
+								<div class="length-label">Length</div>
+								<div class="length-value">4 - 6 night</div>
+							</div>
+							<button class="length-btn selection-btn-to-bottom"></button>
+						</div>
+						<button class="reset-btn">reset</button>
+						<button class="search-cruise">search cruise</button>
+					</div><!-- search-type-cruise -->
+					<input type="radio" name="display-search-type" id="display-search-type-hotel" checked>
+
+					<div class="search-type-hotel">
+						<div class="location-container">
+							<label class="location-label">City, Location or Airport</label>
+							<input type="text" name="location" placeholder="maimi" class="location-input">
+						</div>
+
+						<div class="date-container hotel">
+							<div class="date depature">
+								<label class="departure-label" for="">departure date</label>
+								<input type="text" class="date-input" placeholder="11/12/2017"></input>
+								<div class="btn-container pull-right">
+									<button class="inc-departe-date"></button>
+									<button class="reduce-departe-date"></button>
+								</div>
+							</div>
+							<div class="date return">
+								<label class="departure-label" for="">departure return</label>
+								<input type="text" class="date-input" placeholder="11/12/2017"></input>
+								<div class="btn-container pull-right">
+									<button class="inc-return-date"></button>
+									<button class="reduce-return-date"></button>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="adult-amount-container">
-						<div class="adult-amount-label">adult</div>
-						<div class="amount-btn-container">
-							<button class="inc-adult-amount"></button>
-							<span class="adult-amount">1</span>
-							<button class="reduce-adult-amount"></button>
+						<div class="room-container">
+							<div class="room">
+								<div class="room-label">ROOM</div>
+								<div class="room-value">1 room</div>
+							</div>
+							<button class="room-btn selection-btn-to-top"></button>
 						</div>
-					</div>
 
-					<div class="class-cadine-container"></div>
+						<div class="adult-amount-container hotel-adult">
+							<div class="adult-amount-label">adult</div>
+							<div class="amount-btn-container">
+								<button class="inc-adult-amount"></button>
+								<span class="adult-amount">1</span>
+								<button class="reduce-adult-amount"></button>
+							</div>
+							<button class="adult-amount-btn selection-btn-to-top"></button>
+						</div>
 
-					<div class="children-amount-container"></div>
+						<div class="rating-container">
+							<div class="rating">
+								<div class="rating-label">rating</div>
+								<div class="rating-value">5 stars</div>
+							</div>
+							<button class="rating-btn selection-btn-to-top"></button>
+						</div>
 
-					<div class="adult-amount-container"></div>
+						<div class="children-amount-container hotel-children">
+							<div class="children-amount-label">children</div>
+							<div class="amount-btn-container">
+								<button class="inc-children-amount"></button>
+								<span class="children-amount">1</span>
+								<button class="reduce-children-amount"></button>
+							</div>
+							<button class="children-amount-btn selection-btn-to-top"></button>
+						</div>
 
-					<div class="preferred-airlines-container"></div>
+						<div class="children-amount-container hotel-children-1">
+							<div class="children-amount-label">children</div>
+							<input type="text" name="" class="children-amount-1">
+							<button class="children-amount-btn selection-btn-to-top"></button>
+						</div>
 
-					<div class="flexible-dates-container"></div>
+						<button class="serch-hotel-btn">search hotel</button>
 
-					<button>search flight</button>
-
-					</div>
-				</div>
+					</div><!-- search-type-hotel -->
+				</div><!-- search-form-container -->
+				
 			</div>
 		</main>
 
 	</section>
-
 <script src="lib/js/jquery-3.3.1.min.js"></script>
 <script src="lib/js/bootstrap.js"></script>
 <script src="js/main.js"></script>
