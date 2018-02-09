@@ -798,22 +798,39 @@ button[class*="reduce"] {
 }
 
 .hotel-children {
-	width: 49%;
+	width: 45%;
 	margin-right: 0;
 	margin-top: 0;
+	padding-right: 40px;
 	vertical-align: bottom;
 }
 
 .hotel-children-1 {
-	width: 49%;
-}
-
-.hildren-amount-1 {
-
+	width: 45%;
+	width: 45%;
+	padding-right: 40px;
+	margin-left: calc(48% + 30px);
 }
 
 .children-amount-1 {
 	display: block;
 	width: 120px;
 	height: 40px;
+}
+
+.serch-hotel-btn {
+	display: block;
+	width: 485px;
+	height: 55px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: $background-color-bright;
+	font-size: 20px;
+	color: $text-color-light;
+	text-transform: uppercase;
+	background-image: url(../img/search-ico.png);
+	background-repeat: no-repeat;
+	background-position: 28% center;
 }
