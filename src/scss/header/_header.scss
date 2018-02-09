@@ -3,7 +3,12 @@
 .header{
 	background-color: $background-color-darck;
 	height: 52px;
-	
+}
+
+.header-container {
+	flex-wrap: nowrap;
+	display: flex;
+	justify-content: space-between;
 }
 
 .user-action {
@@ -11,13 +16,12 @@
 	font-size: 13px;
 	text-transform: uppercase;
 	height: 100%;
+	display: flex;
 
-	& .row {
-		height: 51px;
-	}	
 }
 .user-action__el{
-	height: 100%;
+	width: 100px;
+	text-align: center;
 
 	& a {
 		display: block;
@@ -30,20 +34,29 @@
 	}
 }
 
+.user-action__el{
+	border-left: 1px solid #333;
+}
+
 .user-action__el_phone {
 	background-image: url(../img/phone-ico.png);
+	width: 150px;
+	padding-left: 10px;
 	background-repeat: no-repeat;
-	background-position: 15% center;
+	background-position: 10px center;
+	border-right: 1px solid #333;
 }
 .social{
 	font-size: 0;
+	display: flex;
 }
 .social_link{
 	display: inline-block;
 	height: 51px;
-	width: 20%;
+	width: 25px;
 	background-repeat: no-repeat;
 	background-position: center;
+	border-left: 1px solid #333;
 }
 .twitter {
 	background-image: url(../img/twitter.png);
@@ -59,4 +72,5 @@
 }
 .flickr {
 	background-image: url(../img/flickr.png);
+	border-right: 1px solid #333;
 }

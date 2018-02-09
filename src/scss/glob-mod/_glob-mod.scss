@@ -3,14 +3,13 @@ body, html {
 	padding: 0;
 }
 
-*[class*="col-"] {
-	padding: 0;
-}
 
 *{
 	box-sizing: border-box;
+	outline: 1px solid red;
 
 }
+
 ul{
 	list-style: none;
 }
@@ -21,5 +20,10 @@ a{
 }
 
 a:hover{
-	text-decoration: none;
+	text-decoration: underline;
+}
+
+.container{
+	width: 1174px;
+	margin: 0 auto;
 }

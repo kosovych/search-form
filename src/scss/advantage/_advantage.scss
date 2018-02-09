@@ -1,0 +1,53 @@
+@import 'glob-var/_glob-var.scss';
+
+.advantage {
+	padding-top: 68px;
+	background-image: url(../img/bg-advantage.png);
+	height: 320px;
+}
+
+.average-container{
+	width: 1174px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantage-carg {
+	width: 370px;
+	padding: 35px;
+	padding-bottom: 0;
+}
+
+.advantage_img{
+	width: 100%;
+}
+
+.advantage-description{
+	border: 1px solid $border-color-form;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.advantage-description {
+	margin-top: -40px;
+	height: 185px;
+}
+
+.advantage-title{
+	font-style: 15px;
+	text-transform: uppercase;
+}
+
+.advantage-btn{
+	width: 190px;
+	height: 30px;
+	background-color: $background-color-btn-bright;
+	border: none;
+	color: $text-color-light;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+

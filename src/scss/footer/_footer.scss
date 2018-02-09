@@ -1,0 +1,59 @@
+@import 'glob-var/_glob-var.scss';
+
+.footer {
+	background-color: $background-color-darck;
+	color: $text-color-light;
+	padding-top: 40px;
+	padding-bottom: 90px;
+}
+
+.footer-section{
+	& h2 {
+		font-size: 20px;
+		text-transform: uppercase;
+
+	}
+}
+
+.footer-container {
+	width: 1174px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-section{
+	width: 15%;
+}
+
+.gallery-footer-section{
+	flex-basis: 30%;
+}
+
+.nav-footer-section{
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-footer{
+	display: flex;
+	flex-direction: column;
+}
+
+.trip-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.galety-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	& div {
+		width: 30%;
+		& img {
+			width: 100%;
+		}
+	}
+}

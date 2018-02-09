@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 gulp.task('serve', () => {
     browserSync.init({
         server: {
+        	injectChanges: true,
             baseDir: "./build/"
         },
         notify: false

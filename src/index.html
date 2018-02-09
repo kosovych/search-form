@@ -4,47 +4,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="lib/css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 	<header class="header">
-		<div class="user-action container">
-			<div class="row">
-				<div class="user-action__el col-md-1">
+		<div class="header-container container">
+
+			<div class="user-action">
+					<div class="user-action__el">
 					<a class="text-center" href="#">my account</a>
 				</div>
-				<div class="user-action__el col-md-1">
+				
+				<div class="user-action__el">
 					<a class="text-center" href="#">login</a>
 				</div>
-				<div class="user-action__el user-action__el_phone  col-md-2">
+				
+				<div class="user-action__el user-action__el_phone">
 					<a class=" text-center" href="#">18000-0000-0000</a>
 				</div>
-				<div class="social col-md-2 col-md-offset-6">
+			</div>
+
+				<div class="social">
 					<a href="#" class="social_link twitter"></a>
 					<a href="#" class="social_link facebook"></a>
 					<a href="#" class="social_link dribbble"></a>
 					<a href="#" class="social_link linkedin"></a>
 					<a href="#" class="social_link flickr"></a>
 				</div>
-			</div>
 		</div>
 	</header>
 
 	<section class="search">
 
 		<nav class="search-nav">
-			<div class="container">
-				<div class="row">
-					<a href="#" class="search-nav__item col-md-2 text-center">logo</a>
+			<div class="search-nav-container container">
+					<div class="logo-container">
+						<a href="#" class="search-nav__item col-md-2 text-center">logo</a>
+					</div>
 					<a href="#" class="search-nav__item col-md-1 text-center col-md-offset-2">home</a>
 					<a href="#" class="search-nav__item col-md-1 text-center">hotells</a>
 					<a href="#" class="search-nav__item col-md-2 text-center">hot deals</a>
 					<a href="#" class="search-nav__item col-md-1 text-center">flight</a>
 					<a href="#" class="search-nav__item col-md-2 text-center">holiday rental</a>
 					<a href="#" class="search-nav__item col-md-1 text-center">contact</a>
-				</div>
 			</div>
 		</nav>
 
@@ -56,7 +59,7 @@
 					<label for="display-search-type-hotel" class="search-form-tabs__tab hotel-tab">hotel</label>
 				</div>
 				<div class="search-form-container">
-					<input type="radio" name="display-search-type" id="display-search-type-flight">
+					<input type="radio" name="display-search-type" id="display-search-type-flight" checked>
 					<div class="search-type-flight">
 						<div class="search-type-container">
 							<div class="flight-type">
@@ -91,7 +94,7 @@
 							<div class="date depature">
 								<label class="departure-label" for="">departure date</label>
 								<input type="text" class="date-input" placeholder="11/12/2017"></input>
-								<div class="btn-container pull-right">
+								<div class="btn-container">
 									<button class="inc-departe-date"></button>
 									<button class="reduce-departe-date"></button>
 								</div>
@@ -99,7 +102,7 @@
 							<div class="date return">
 								<label class="departure-label" for="">departure return</label>
 								<input type="text" class="date-input" placeholder="11/12/2017"></input>
-								<div class="btn-container pull-right">
+								<div class="btn-container">
 									<button class="inc-return-date"></button>
 									<button class="reduce-return-date"></button>
 								</div>
@@ -209,7 +212,7 @@
 						<button class="reset-btn">reset</button>
 						<button class="search-cruise">search cruise</button>
 					</div><!-- search-type-cruise -->
-					<input type="radio" name="display-search-type" id="display-search-type-hotel" checked>
+					<input type="radio" name="display-search-type" id="display-search-type-hotel">
 
 					<div class="search-type-hotel">
 						<div class="location-container">
@@ -280,14 +283,151 @@
 						<button class="serch-hotel-btn">search hotel</button>
 
 					</div><!-- search-type-hotel -->
-				</div><!-- search-form-container -->
-				
+				</div><!-- search-form-container -->				
 			</div>
 		</main>
-
 	</section>
-<script src="lib/js/jquery-3.3.1.min.js"></script>
-<script src="lib/js/bootstrap.js"></script>
+
+	<section class="advantage">
+
+		<div class="average-container container">
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/hotel-adv-ico.png" alt="">
+					<div class="advantage-title">best hotels</div>
+					<button class="advantage-btn">book rooms now</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/shild-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/prise-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="latest-offer">
+		<h2>latest offer</h2>
+		<div class="offer-container">
+
+			<button class="to-left"></button>
+			<button class="to-right"></button>
+
+			<div class="offer-card">
+			<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+				<div class="offer-sale">30%off</div>
+			</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+
+		<div class="footer-container container">
+
+			<div class="footer-section nav-footer-section">
+				<h2>navigation</h2>
+				<nav class="nav-footer">
+					<a href="#">Home</a>
+					<a href="#">Tours</a>
+					<a href="#">Special Offer</a>
+					<a href="#">Where We Go</a>
+					<a href="#">Contact us</a>
+				</nav>
+			</div>
+
+			<div class="footer-section trip-footer-section">
+				<h2>recent trip</h2>
+				<nav class="trip-nav">
+					<a href="#">USA</a>
+					<a href="#">UK</a>
+					<a href="#">BANG KOK</a>
+					<a href="#">UAE</a>
+					<a href="#">THAILAND</a>
+				</nav>
+			</div>
+
+			<div class="footer-section gallery-footer-section">
+				<h2>tour gallery</h2>
+				<div class="galety-container">
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+				</div>
+			</div>
+
+			<div class="footer-section addres-footer-section">
+				<h2>addres</h2>
+				<p>
+					Address : Area<br>
+					Phone : 0000 000 0000<br>
+					Email : info@site.com
+				</p>
+			</div>
+
+		</div>
+	</footer>
+
+
+<!-- <script src="lib/js/jquery-3.3.1.min.js"></script> -->
+<!-- <script src="lib/js/bootstrap.js"></script> -->
 <script src="js/main.js"></script>
 </body>
 </html>
