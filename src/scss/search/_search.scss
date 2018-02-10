@@ -33,23 +33,16 @@
 	}
 }
 
-.search-nav-link{
-
-}
-
-
-
 
 
 .search-nav__item {
 	height: 100%;
 	line-height: 4;
 	color: $text-color-light;
-	opacity: 1;
 }
 
 .search-nav__item:hover{
-	color: text-color-light;
+	color: $text-color-light;
 }
 
 .search-form-container{

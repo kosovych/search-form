@@ -17,10 +17,124 @@
 		width: 85%;
 		margin: 0 auto;
 	}
+	.advantage_img{
+		justify-content: space-between;
+	}
 }
 
-@media all and (max-width: 1135px) {
-	.search-wrap{
-		/*wi*/
+@media all and (max-width: 1105px) {
+	.search {
+		padding-bottom: 20px;
+		height: auto;
+	}
+	.search-form{
+		width: 95%;
+		margin: 10px auto;
+	}
+	.children-amount-label::after,
+	.adult-amount-label::after,
+	.adult-amount-label::after {
+		display: none;
+	}
+
+	.date-input{
+		width: 100%;
+	}
+
+	.price-cont {
+		flex-wrap: wrap;
+	}
+}
+
+
+@media all and (max-width: 960px) {
+	.direction-container,
+	.date-container {
+		display: inline-block;
+		width: 100%;
+	}
+	.date, .direction_item {
+		width: 100%;
+		margin: 0;
+	}
+	.destinations-container,
+	.destinations-container,
+	.departure-port-container,
+	.cruise-lines-container,
+	.cruise-ships-container,
+	.departure-date-container,
+	.length-container {
+		display: flex;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+
+}
+
+@media all and (max-width: 800px) {
+
+	.search-nav-container {
+		flex-wrap: wrap;
+	}
+
+	.footer-section:not(:last-child){
+		/*margin-left: 20px;*/
+	}
+
+	.search-nav{
+	height: auto;
+}
+
+	.footer-section  {
+		width: 200px;
+		margin-right: 20px;
+	}
+
+	.footer-container{
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+@media all and (max-width: 660px) {
+	.search-form-tabs__tab {
+		width: 33.33333333%;
+		margin: 0;
+	}
+
+	.adult-amount-container,
+	.class-cabine-container,
+	.children-amount-container,
+	.children-amount-container,
+	.preferred-airlines-container,
+	.flexible-dates-container,
+	.hotel-children-1,
+	.adult-amount-container,
+	.rating-container,
+	.hotel-children-1
+	{
+		display: flex;
+		width: 100%;
+	}
+
+	.hotel-children-1{
+		margin-left: 0;
+	}
+
+	.search-flight,
+	.search-cruise,
+	.serch-hotel-btn{
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.advantage-btn {
+		width: 95%;
+	}
+
+	.offer-container{
+		width: 95%;
 	}
 }

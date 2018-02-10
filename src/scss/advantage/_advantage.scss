@@ -17,6 +17,8 @@
 	width: 370px;
 	padding: 35px;
 	padding-bottom: 0;
+	padding-left: 1%;
+	padding-right: 1%;
 }
 
 .advantage_img{
@@ -29,6 +31,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.advantage-carg_img{
+	font-size: 0px;
+	height: 217.047px;
 }
 
 .advantage-description {
