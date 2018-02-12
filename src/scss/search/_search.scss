@@ -1,4 +1,6 @@
 @import 'glob-var/_glob-var.scss';
+@import 'mixin/mixin.scss';
+@import 'mixin/mixin.scss';
 
 .search {
 	background-image: url(../img/bg-search.png);
@@ -7,11 +9,18 @@
 }
 
 .search-nav{
+	@include font("Dense", 30px, 500);
+	line-height: 3;
 	height: 80px;
-	font-size: 20px;
+	// font-size: 20px;
 	text-transform: uppercase;
 	background-color: $background-color-darck;
 	opacity: 0.65;
+}
+
+.logo-container{
+	@include font("Dense", 72px, 500);
+	line-height: 1;
 }
 
 .search-nav-container{
@@ -37,7 +46,6 @@
 
 .search-nav__item {
 	height: 100%;
-	line-height: 4;
 	color: $text-color-light;
 }
 
@@ -49,6 +57,7 @@
 	background-color: $text-color-light;
 	padding: 0 20px 20px 20px;
 	font-size: 0;
+	font-family: "OpenSans";
 }
 
 .search-form {
@@ -61,6 +70,7 @@
 }
 
 .search-form-tabs__tab{
+	@include font("OpenSans", 20px, 300);
 	margin-right: 5px;
 	margin-bottom: 0;
 	display: inline-block;
@@ -145,7 +155,8 @@ input[name="display-search-type"] {
 	font-size: 0px;
 }
 .flight-type-label {
-	font-size: 16px;
+	@include font("OpenSans", 16px, 300);
+	color: #828282;
 	line-height: 83px;
 	padding-left: 40px;
 	padding-right: 10px;
@@ -852,4 +863,18 @@ button[class*="reduce"] {
 	background-image: url(../img/search-ico.png);
 	background-repeat: no-repeat;
 	background-position: 28% center;
+}
+.direction-label,
+.departure-label,
+.class-cabine-title,
+.destinations-label,
+.departure-port-label,
+.cruise-lines-label,
+.cruise-ships-label,
+.departure-label,
+.length-label,
+.location-label,
+.room-label{
+	@include font("OpenSans", 12px, 500);
+	color: $text-color-form-main;
 }

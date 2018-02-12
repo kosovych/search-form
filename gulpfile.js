@@ -42,6 +42,11 @@ gulp.task('pic', () => {
 							.pipe(gulp.dest('build/img'))
 });
 
+gulp.task('font', () => {
+	return gulp.src('src/fonts/*.*')
+							.pipe(gulp.dest('build/fonts'))
+});
+
 gulp.task('lib', () => {
 	return gulp.src('src/lib/**/*.*')
 							.pipe(gulp.dest('build/lib'))
@@ -58,6 +63,7 @@ gulp.task('watch', () => {
 	gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
 	gulp.watch('src/js/**/*.js', gulp.series('js'));
 	gulp.watch('src/img/', gulp.series('pic'));
+	gulp.watch('src/fonts/', gulp.series('font'));
 	gulp.watch('src/lib/', gulp.series('lib'));
 });
 
@@ -66,4 +72,4 @@ gulp.task('default', gulp.series(
 	gulp.parallel('watch', 'serve')
 ));
 
-gulp.task('build', gulp.series(gulp.parallel('html', 'sass','js', 'pic', 'lib')));
+gulp.task('build', gulp.series(gulp.parallel('html', 'sass','js', 'pic', 'font', 'lib')));

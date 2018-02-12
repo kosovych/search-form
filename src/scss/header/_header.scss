@@ -1,6 +1,8 @@
 @import 'glob-var/_glob-var.scss';
+@import 'mixin/mixin.scss';
 
 .header{
+	@include font("Dokchamp", 13px, 300);
 	background-color: $background-color-darck;
 	height: 52px;
 }

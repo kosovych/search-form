@@ -1,6 +1,8 @@
 @import 'glob-var/_glob-var.scss';
+@import 'mixin/mixin.scss';
 
 .footer {
+	@include font("Archivo Narrow", 18px, 300);
 	background-color: $background-color-darck;
 	color: $text-color-light;
 	padding-top: 40px;

@@ -1,4 +1,8 @@
+@import 'glob-var/_glob-var.scss';
+@import 'mixin/mixin.scss';
+
 .latest-offer{
+	@include font("Archivo Narrow", 25px, 300);
 	width: 1120px;
 	margin: 0 auto;
 	margin-top: 250px;
@@ -7,6 +11,7 @@
 
 .latest-offer h2 {
 	font-size: 25px;
+	font-weight: 300;
 	text-transform: uppercase;
 	margin-bottom: 70px;
 }
@@ -67,6 +72,7 @@
 .see-tour-details {
 	color: $background-color-btn-bright;
 	text-decoration: underline;
+	font-size: 12px;
 	align-self: flex-end;
 
 }

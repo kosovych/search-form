@@ -1,6 +1,8 @@
 @import 'glob-var/_glob-var.scss';
+@import 'mixin/mixin.scss';
 
 .advantage {
+	@include font("OpenSans", 15px, 600);
 	padding-top: 68px;
 	background-image: url(../img/bg-advantage.png);
 	height: 320px;
@@ -16,6 +18,7 @@
 .advantage-carg {
 	width: 370px;
 	padding: 35px;
+	padding-top: 2px;
 	padding-bottom: 0;
 	padding-left: 1%;
 	padding-right: 1%;
@@ -39,16 +42,16 @@
 }
 
 .advantage-description {
-	margin-top: -40px;
+	margin-top: -10px;
 	height: 185px;
 }
 
 .advantage-title{
-	font-style: 15px;
 	text-transform: uppercase;
 }
 
 .advantage-btn{
+	@include font("OpenSans", 15px, 600);
 	width: 190px;
 	height: 30px;
 	background-color: $background-color-btn-bright;
