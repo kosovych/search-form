@@ -9,6 +9,7 @@
 }
 
 .search-nav{
+
 	@include font("Dense", 30px, 500);
 	line-height: 3;
 	height: 80px;
@@ -194,7 +195,9 @@ input[id="flight-type-one-way"]:checked ~
 }
 .direction-container{
 	font-size: 0;
-	margin-bottom: 20px;
+	display: flex;
+	width: 99%;
+	margin: 0 auto 20px auto;
 }
 .direction_item{
 	padding: 8px;
@@ -212,7 +215,7 @@ input[id="flight-type-one-way"]:checked ~
 	background-position: 0 center;
 }
 .direction-from {
-	margin-right: 36px;
+	margin-right: 4%;
 	margin-left: 0;
 }
 .direction_item input {
@@ -306,12 +309,12 @@ button[class*="reduce"] {
 	justify-content: space-between;
 	border: 1px solid $border-color-form;
 	margin-top: 20px;
-	margin-right: 36px;
+	margin-right: 4%;
 }
 
 .adult-amount-label{
 	display: inline-block;
-	width: 40%;
+	width: 45%;
 	font-size: 16px;
 	text-transform: uppercase;
 	background-image: url(../img/adult-ico.png);
@@ -319,17 +322,18 @@ button[class*="reduce"] {
 	padding-left: 20px;
 	background-position: 10px center;
 	padding: 10px 30px;
-    vertical-align: bottom;
-	margin-right: 45px;
+   vertical-align: bottom;
+	margin-right: 8%;
 }
 
 .adult-amount-label::after {
 	content: "";
 	position: absolute;
+	margin: 0 5px;
 	width: 15px;
 	height: 60px;
 	top: 0;
-	left: 50%;
+	left: 45%;
 	background-image: url(../img/arrow-title.png);
 	background-repeat: no-repeat;
 }
@@ -352,6 +356,7 @@ button[class*="reduce"] {
 }
 .adult-amount{
 	font-size: 20px;
+	margin: 0 5px;
 }
 
 .class-cabine-container {
@@ -394,7 +399,7 @@ button[class*="reduce"] {
 
 .children-amount-label{
 	display: inline-block;
-	width: 40%;
+	width: 45%;
 	font-size: 16px;
 	text-transform: uppercase;
 	background-image: url(../img/children-ico.png);
@@ -403,7 +408,7 @@ button[class*="reduce"] {
 	background-position: 10px center;
 	padding: 10px 30px;
     vertical-align: bottom;
-	margin-right: 45px;
+	margin-right: 8%;
 }
 
 .children-amount-label::after {
@@ -435,6 +440,7 @@ button[class*="reduce"] {
 }
 .children-amount{
 	font-size: 20px;
+	margin: 0 5px;
 }
 
 .preferred-airlines-container{
@@ -446,7 +452,7 @@ button[class*="reduce"] {
 	justify-content: space-between;
 	border: 1px solid $border-color-form;
 	margin-top: 20px;
-	margin-right: 36px;
+	margin-right: 4%;
 }
 
 .preferred-airlines-btn{
@@ -636,6 +642,7 @@ button[class*="reduce"] {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-left: 1px solid $border-color-form;
+	margin-left: 5px;
 }
 
 .destinations-value,
@@ -843,7 +850,7 @@ button[class*="reduce"] {
 
 .children-amount-1 {
 	display: block;
-	width: 120px;
+	width: 125px;
 	height: 40px;
 }
 
