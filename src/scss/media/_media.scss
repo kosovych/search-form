@@ -28,7 +28,8 @@
 	.search {
 		padding-bottom: 20px;
 		height: auto;
-		background-size: auto;
+		background-size: auto 100%;
+		background-position: center;
 	}
 	.search-form{
 		width: 95%;
@@ -139,6 +140,13 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.search-flight,
+	.search-cruise,
+	.serch-hotel-btn{
+		background-position: 22% center;
+	}
+
 
 	.advantage-btn {
 		width: 95%;
