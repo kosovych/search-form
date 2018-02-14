@@ -9,7 +9,8 @@ gulp.task('serve', () => {
     browserSync.init({
         server: {
         	injectChanges: true,
-            baseDir: "./build/"
+            baseDir: "./build/",
+            index: "search-form-13.html"
         },
         notify: false
     });
