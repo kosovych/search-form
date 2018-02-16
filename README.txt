@@ -8,7 +8,7 @@ To work use:
 
 
 
-To bild use:
+To build use:
 	$ gulp build
 
 Plugins: sass, autoprefixer, sourcemaps, browserSync.

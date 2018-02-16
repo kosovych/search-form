@@ -11,7 +11,7 @@
 		<div class="header-container container">
 
 			<div class="user-action">
-					<div class="user-action__el">
+				<div class="user-action__el">
 					<a class="text-center" href="#">my account</a>
 				</div>
 				
@@ -24,32 +24,101 @@
 				</div>
 			</div>
 
-				<div class="social">
-					<a href="#" class="social_link twitter"></a>
-					<a href="#" class="social_link facebook"></a>
-					<a href="#" class="social_link dribbble"></a>
-					<a href="#" class="social_link linkedin"></a>
-					<a href="#" class="social_link flickr"></a>
-				</div>
+			<div class="social">
+				<a href="#" class="social_link twitter"></a>
+				<a href="#" class="social_link facebook"></a>
+				<a href="#" class="social_link dribbble"></a>
+				<a href="#" class="social_link linkedin"></a>
+				<a href="#" class="social_link flickr"></a>
+			</div>
 		</div>
 	</header>
 
-<section class="search">
-	<nav class="search-nav">
-	<div class="search-nav-container container">
-		<div class="logo-container">
-			<a href="#" class="search-nav__item col-md-2 text-center">logo</a>
-		</div>
-		<div class="nav-link-container">
-			<a href="#" class="search-nav__item">home</a>
-			<a href="#" class="search-nav__item">hotells</a>
-			<a href="#" class="search-nav__item">hot deals</a>
-			<a href="#" class="search-nav__item">flight</a>
-			<a href="#" class="search-nav__item">holiday rental</a>
-			<a href="#" class="search-nav__item">contact</a>
-		</div>
-	</div>
+	<section class="search">
+		<nav class="search-nav">
+			<div class="search-nav-container container">
+				<div class="logo-container">
+					<a href="#" class="search-nav__item col-md-2 text-center">logo</a>
+				</div>
+				<div class="nav-link-container">
+					<a href="#" class="search-nav__item">home</a>
+					<a href="#" class="search-nav__item">hotells</a>
+					<a href="#" class="search-nav__item">hot deals</a>
+					<a href="#" class="search-nav__item">flight</a>
+					<a href="#" class="search-nav__item">holiday rental</a>
+					<a href="#" class="search-nav__item">contact</a>
+				</div>
+			</div>
 		</nav>
-</section>
+		
+		<!-- search-container -->
+		<div class="search13-container">
+			<div class="search13-tabs">
+				<div class="search13-tab flight-tab active13-tab">flight</div>
+				<div class="search13-tab cruise-tab">cruise</div>
+				<div class="search13-tab hotel-tab">hotel</div>
+			</div>
+
+			<div class="flight-search13">
+
+				<input type="text" name="flight-from" class="flight-from">
+				<input type="text" name="flight-to" class="flight-to">
+				
+				<div class="data-container">
+					<div class="data-value">11/05/2017</div> - 
+					<div class="data-value">11/05/2017</div>
+				</div>
+
+				<div class="type-flight">
+					<div class="type-flight-exact active-type-flight">exact</div>
+					<div class="type-flight-flexible">flexible</div>
+				</div>
+
+				<div class="total-travellers">
+					<span class="total-travellers-value">5</span>
+					<span>Travellers</span>
+
+					<div class="total-travellers-option">
+
+						<div class="tarveller-amount adoult-amount">
+							<div class="traveller-title">adoult</div>
+							<div class="traveller-btn-container">
+								<button class="inc-treveller">+</button>
+								<span class="travellrer-value">0</span>
+								<button class="red-traveller">-</button>
+							</div>
+						</div>	
+
+						<div class="tarveller-amount children-amount">
+							<div class="traveller-title">children</div>
+							<div class="traveller-btn-container">
+								<button class="inc-treveller">+</button>
+								<span class="travellrer-value">0</span>
+								<button class="red-traveller">-</button>
+							</div>
+						</div>
+
+						<div class="tarveller-amount infants-amount">
+							<div class="traveller-title">infants</div>
+							<div class="traveller-btn-container">
+								<button class="inc-treveller">+</button>
+								<span class="travellrer-value">0</span>
+								<button class="red-traveller">-</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<button class="search-flight-btn search13-btn">Search flight</button>
+			</div>
+		</div>
+
+		<!-- / search-container -->
+
+
+	</section>
+
+	<script src="lib/js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
