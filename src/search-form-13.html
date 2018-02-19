@@ -54,11 +54,12 @@
 		<!-- search-container -->
 		<div class="search13-container">
 			<div class="search13-tabs">
-				<div class="search13-tab flight-tab active13-tab">flight</div>
-				<div class="search13-tab cruise-tab">cruise</div>
-				<div class="search13-tab hotel-tab">hotel</div>
+				<label for="flight-search13-input" class="search13-tab flight-tab active13-tab">flight</label>
+				<label for="cruise-search13-input" class="search13-tab cruise-tab">cruise</label>
+				<label for="hotel-search13-input" class="search13-tab hotel-tab">hotel</label>
 			</div>
 
+			<input id="flight-search13-input" type="radio" name="tab-radio" checked="true">
 			<div class="flight-search13">
 
 				<input type="text" name="flight-from" class="flight-from">
@@ -75,16 +76,16 @@
 				</div>
 
 				<div class="total-travellers">
-					<span class="total-travellers-value">5</span>
+					<span class="total-travellers-value"></span>
 					<span>Travellers</span>
 
-					<div class="total-travellers-option">
+					<div class="total-travellers-option display-none">
 
 						<div class="tarveller-amount adoult-amount">
 							<div class="traveller-title">adoult</div>
 							<div class="traveller-btn-container">
 								<button class="inc-treveller">+</button>
-								<span class="travellrer-value">0</span>
+								<span class="travellrer-value"></span>
 								<button class="red-traveller">-</button>
 							</div>
 						</div>	
@@ -93,7 +94,7 @@
 							<div class="traveller-title">children</div>
 							<div class="traveller-btn-container">
 								<button class="inc-treveller">+</button>
-								<span class="travellrer-value">0</span>
+								<span class="travellrer-value"></span>
 								<button class="red-traveller">-</button>
 							</div>
 						</div>
@@ -102,7 +103,7 @@
 							<div class="traveller-title">infants</div>
 							<div class="traveller-btn-container">
 								<button class="inc-treveller">+</button>
-								<span class="travellrer-value">0</span>
+								<span class="travellrer-value"></span>
 								<button class="red-traveller">-</button>
 							</div>
 						</div>
@@ -110,13 +111,271 @@
 					</div>
 				</div>
 				<button class="search-flight-btn search13-btn">Search flight</button>
+
+				<div class="trip-type-container">
+					<div class="trip-type-label">Trip Type:&nbsp;</div>
+					<div class="trip-type-value">Round Trip</div>
+
+					<ul class="trip-type-options">
+						<li>Round Trip</li>
+						<li>One Way</li>
+						<li>Multy City</li>
+					</ul>
+				</div>
+
+				<div class="addtional-options">
+					Addtional Options
+				<div class="addtional-options-container display-none">
+					<input type="text" name="preffered-airlines" placeholder="Preffered Airlines">
+					<input type="text" name="">
+					<input type="text" name="class-cabine" placeholder="All Class/Cabine">
+				</div>
+				</div>
+
 			</div>
+
+			<input id="cruise-search13-input" type="radio" name="tab-radio">
+			<div class="cruise-search13">
+				<input type="text" class="cruise-input destinations-input" placeholder="Destinations">
+				<input type="text" class="cruise-input departure-port-input" placeholder="Departure Port">
+				<input type="text" class="cruise-input cruise-lines-input" placeholder="Cruise Lines">
+				<input type="text" class="cruise-input cruise-date-input" placeholder="November 2016">
+				<button class="cruise-search-13-btn">Search Cruise</button>
+
+				<input type="text" class="cruise-input cruise-ships-input" placeholder="Cruise Ships">
+				<select class="cruise-input length-select">
+					<option disabled value="Length" selected>Length</option>
+				</select>
+				<button class="cruise-input reset-search13-cruise-btn">Reset</button>
+
+			</div>
+
+			<input id="hotel-search13-input" type="radio" name="tab-radio">
+			<div class="hotel-search13">
+				<input class="hotel-input hotel-location" type="hotel-input" name="">
+
+				<div class="hotel-input hotel-data-container">
+					<input class="hotel-data-input" type="text" name="" placeholder="20/11/2015">
+					<span>-</span>
+					<input class="hotel-data-input" type="text" name="" placeholder="30/11/2015">
+				</div>
+
+				<select class="hotel-input hotel-raiting" name="">
+					<option value="Raiting" disabled selected>Raiting</option>
+				</select>
+
+				<div class="hotel-input hotel-travellers">
+					<span class="hotel-travellers-value">0</span>
+					<span class="hotel-travellers-title">Travellers</span>
+
+					<div class="hotel-travellers-options display-none">
+
+						<div class="hotel-amount hotel-room-amount">
+							<div class="hotel-title">Room</div>
+							<div class="hotel-btn-container">
+								<button class="inc-hotel-treveller">+</button>
+								<span class="hotel-travellrer-value"></span>
+								<button class="red-hotel-traveller">-</button>
+							</div>
+						</div>
+
+						<div class="hotel-amount hotel-adult-amount">
+							<div class="hotel-title">Adult</div>
+							<div class="hotel-btn-container">
+								<button class="inc-hotel-treveller">+</button>
+								<span class="hotel-travellrer-value"></span>
+								<button class="red-hotel-traveller">-</button>
+							</div>
+						</div>
+
+						<div class="hotel-amount hotel-clild-amount">
+							<div class="hotel-title">Child</div>
+							<div class="hotel-btn-container">
+								<button class="inc-hotel-treveller">+</button>
+								<span class="hotel-travellrer-value"></span>
+								<button class="red-hotel-traveller">-</button>
+							</div>
+						</div>
+
+						<div class="hotel-amount hotel-clild-age-1-amount">
+							<div class="hotel-title">#1 Age Child</div>
+							<input class="hotel-clild-age-1-amount-input" type="" name="">
+						</div>
+
+						<div class="hotel-amount hotel-adult-amount">
+							<div class="hotel-title">Adult</div>
+							<div class="hotel-btn-container">
+								<button class="inc-hotel-treveller">+</button>
+								<span class="hotel-travellrer-value"></span>
+								<button class="red-hotel-traveller">-</button>
+							</div>
+						</div>
+
+						<div class="hotel-amount hotel-clild-amount">
+							<div class="hotel-title">Child</div>
+							<div class="hotel-btn-container">
+								<button class="inc-hotel-treveller">+</button>
+								<span class="hotel-travellrer-value"></span>
+								<button class="red-hotel-traveller">-</button>
+							</div>
+						</div>
+
+						<div class="hotel-amount hotel-clild-age-1-amount">
+							<div class="hotel-title">#1 Age Child</div>
+							<input class="hotel-clild-age-1-amount-input" type="" name="">
+						</div>
+
+
+					</div>
+				</div>
+
+				<button class="hotel-input hotel-search-13-btn">Search Hotel</button>
+
+			</div>
+
 		</div>
 
 		<!-- / search-container -->
 
-
 	</section>
+	
+		<section class="advantage advantage-search13">
+		<h2>latest offer</h2>
+		
+		<div class="average-container container">
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/hotel-adv-ico.png" alt="">
+					<div class="advantage-title">best hotels</div>
+					<button class="advantage-btn">book rooms now</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/shild-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/prise-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="latest-offer latest-offer-search13">
+		<h2>latest offer</h2>
+		<div class="offer-container">
+
+			<button class="to-left"></button>
+			<button class="to-right"></button>
+
+			<div class="offer-card">
+			<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+				<div class="offer-sale">30%off</div>
+			</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+
+		<div class="footer-container container">
+
+			<div class="footer-section nav-footer-section">
+				<h2>navigation</h2>
+				<nav class="nav-footer">
+					<a href="#">Home</a>
+					<a href="#">Tours</a>
+					<a href="#">Special Offer</a>
+					<a href="#">Where We Go</a>
+					<a href="#">Contact us</a>
+				</nav>
+			</div>
+
+			<div class="footer-section trip-footer-section">
+				<h2>recent trip</h2>
+				<nav class="trip-nav">
+					<a href="#">USA</a>
+					<a href="#">UK</a>
+					<a href="#">BANG KOK</a>
+					<a href="#">UAE</a>
+					<a href="#">THAILAND</a>
+				</nav>
+			</div>
+
+			<div class="footer-section gallery-footer-section">
+				<h2>tour gallery</h2>
+				<div class="galety-container">
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+				</div>
+			</div>
+
+			<div class="footer-section addres-footer-section">
+				<h2>addres</h2>
+				<p>
+					Address : Area<br>
+					Phone : 0000 000 0000<br>
+					Email : info@site.com
+				</p>
+			</div>
+
+		</div>
+	</footer>
 
 	<script src="lib/js/jquery-3.3.1.min.js"></script>
 	<script src="js/main.js"></script>
