@@ -11,6 +11,7 @@ gulp.task('serve', () => {
         	injectChanges: true,
             baseDir: "./build/",
             index: "search-form-13.html"
+            // index: "index.html"
         },
         notify: false
     });

@@ -1,0 +1,41 @@
+.search-nav{
+
+	@include font("Dense", 30px, 500);
+	line-height: 3;
+	height: 80px;
+	// font-size: 20px;
+	text-transform: uppercase;
+	background-color: rgba(34,34,34,0.64);
+}
+
+.logo-container{
+	@include font("Dense", 72px, 500);
+	line-height: 1;
+}
+
+.search-nav-container{
+	display: flex;
+	justify-content: space-between;
+
+	& a {
+		display: inline-block;
+		height: 80px;
+	}
+
+	& a:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	& a:hover {
+		border-bottom: 3px solid $background-color-btn-bright;
+		text-decoration: none;
+	}
+}
+.search-nav__item {
+	height: 100%;
+	color: $text-color-light;
+}
+
+.search-nav__item:hover{
+	color: $text-color-light;
+}

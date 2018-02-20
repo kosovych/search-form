@@ -1,19 +1,26 @@
 @import 'glob-var/_glob-var.scss';
 @import 'mixin/mixin.scss';
 
-/*///////////////
-// search-13 //
-///////////////*/
+// @include font("OpenSans", 20px, 300);
+
+.search {
+	background-image: url(../img/bg-search.png);
+	background-size: cover;
+	height: 720px;
+	@include font("OpenSans", 13px, 300);
+
+}
 
 .search13-container {
 	margin-top: 120px;
-	margin-left: 10%;
+	margin-left: 25%;
 }
 
 
 .search13-tabs {
 	display: flex;
 	align-content: center;
+	font-size: 17px;
 }
 
 .search13-tab {
@@ -30,6 +37,22 @@
 	background-repeat: no-repeat;
 	border-color: $tab-bg-color;
 }
+
+.flight-tab {
+	background-image: url(../img/flight-ico.png);
+	line-height: 2.5;
+}
+
+.cruise-tab {
+	background-image: url(../img/cruise-ico.png);
+	line-height: 2.5;
+}
+
+.hotel-tab {
+	background-image: url(../img/hotel-ico.png);
+	line-height: 2.5;
+}
+
 
 .search13-tab.active13-tab::after {
 	content: "";
@@ -64,18 +87,20 @@
 	display: none;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-content: center;
+	align-content: flex-end;
 	width: 1025px;
 }
 
 .flight-search13 > * {
 	border: 1px solid $text-color-form;
 	margin-right: 5px;
+	margin-bottom: 10px;
+	height: 55px;
 }
 
 .flight-from{
 	width: 210px;
-	height: 52px;
+	height: 55px;
 	border:none;
 	padding-left: 20px;
 	background-image: url('../img/from-ico.png');
@@ -87,7 +112,7 @@
 }
 .flight-to{
 	width: 210px;
-	height: 52px;
+	height: 55px;
 	border:none;
 	padding-left: 20px;
 	background-image: url('../img/from-ico.png');
@@ -106,6 +131,9 @@
   padding-left: 20px;
   padding-right: 5px;
 
+  font-size: 13px;
+  color: $text-color-form;
+
   background-image: url('../img/date-ico.png');
   background-repeat: no-repeat;
   background-position: 5px center;
@@ -113,13 +141,16 @@
 
 .type-flight{
 	width: 80px;
+	font-size: 13px;
+	border-bottom:  1px solid $text-color-form;
+
 }
 .type-flight-exact,
 .type-flight-flexible {
-	height: 50%;
+	height: 49%;
 	text-transform: uppercase;
 	background-color: $text-color-light;
-	line-height: 1.5;
+	line-height: 2;
 	text-align: center;
 	color: $text-color-form;
 }
@@ -140,6 +171,9 @@
   justify-content: center;
 
   position: relative;
+
+  font-size: 13px;
+  color: $text-color-form;
 }
 
 .total-travellers-value{
@@ -154,6 +188,9 @@
 	background-repeat: no-repeat;
 	background-position: 5px center;
 	color: $text-color-light;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 16px;
 }
 
 .total-travellers-option{
@@ -167,6 +204,7 @@
 	
   background-color: $text-color-light;
 	border: 1px solid $text-color-form;
+	z-index: 9999;
 }
 
 .total-travellers-option {
@@ -239,10 +277,10 @@
 	display: flex;
 	border: none;
 	border-bottom: 1px solid  $background-color-bright;
-	margin-top: 10px;
 	color: $background-color-bright;
 	position: relative;
 	cursor: pointer;
+	height: 20px;
 }
 
 .trip-type-value::after {
@@ -283,9 +321,9 @@
 	position: relative;
 	margin-left: 20px;
 	border-bottom: 1px solid  $background-color-bright;
-	margin-top: 10px;
 	color: $background-color-bright;
 	cursor: pointer;
+	height: 20px;
 }
 
 .addtional-options-container {
@@ -388,6 +426,7 @@
 	height: 50px;
 	padding-left: 25px;
 	margin-right: 10px;
+	margin-bottom: 20px;
 	background-repeat: no-repeat;
 	background-position: 10px center;
 	border: 1px solid $text-color-form;
@@ -551,7 +590,6 @@ input#hotel-search13-input {
 }
 
 .advantage h2{
-	width: 1120px;
 	margin: 0 auto;
 	margin-bottom: 70px;
 	text-transform: uppercase;
