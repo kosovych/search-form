@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search Form 10</title>
+	<link rel="stylesheet" href="css/main-search10.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="header-container container">
+
+			<div class="user-action">
+					<div class="user-action__el">
+					<a class="text-center" href="#">my account</a>
+				</div>
+				
+				<div class="user-action__el">
+					<a class="text-center" href="#">login</a>
+				</div>
+				
+				<div class="user-action__el user-action__el_phone">
+					<a class=" text-center" href="#">18000-0000-0000</a>
+				</div>
+			</div>
+
+				<div class="social">
+					<a href="#" class="social_link twitter"></a>
+					<a href="#" class="social_link facebook"></a>
+					<a href="#" class="social_link dribbble"></a>
+					<a href="#" class="social_link linkedin"></a>
+					<a href="#" class="social_link flickr"></a>
+				</div>
+		</div>
+	</header>
+
+	<section class="search">
+
+		<nav class="search-nav">
+			<div class="search-nav-container container">
+				<div class="logo-container">
+					<a href="#" class="search-nav__item col-md-2 text-center">logo</a>
+				</div>
+				<div class="nav-link-container">
+					<a href="#" class="search-nav__item col-md-1 text-center col-md-offset-2">home</a>
+					<a href="#" class="search-nav__item col-md-1 text-center">hotells</a>
+					<a href="#" class="search-nav__item col-md-2 text-center">hot deals</a>
+					<a href="#" class="search-nav__item col-md-1 text-center">flight</a>
+					<a href="#" class="search-nav__item col-md-2 text-center">holiday rental</a>
+					<a href="#" class="search-nav__item col-md-1 text-center">contact</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="search-container">
+
+			<div class="search-tabs">
+				<label class="search-tab flight-tab active-tab">Flight</label>
+				<label class="search-tab cruise-tab">Cruise</label>
+				<label class="search-tab hotel-tab">Hotel</label>
+			</div>
+
+			<div class="sarch-form">
+
+				<div class="fligth-search">
+					<div class="flight-types">
+						<input type="radio" name="flight-type" id="round-trip" checked>
+						<label for="round-trip" class="flight-type">Round Trip</label>
+
+						<input type="radio" name="flight-type" id="one-way">
+						<label for="one-way" class="flight-type">One way</label>
+
+						<input type="radio" name="flight-type" id="multi-city">
+						<label for="multi-city" class="flight-type">Multi City</label>
+					</div>
+
+				<div class="locations">
+					<input type="text" class="location-input departure-input" placeholder="Departure">
+					<input type="text" class="location-input return-input" placeholder="Return">
+				</div>
+
+				<div class="dates">
+					<input type="text" class="date-input departure-date">
+					<input type="text" class="date-input return-date">
+				</div>
+
+				<div class="travellers">
+
+					<div class="travellers-amount">
+						<button class="dec-amount">-</button>
+						<span class="traveller-amount"><span class="anoumt-value">0</span> Adult</span>
+						<button class="inc-amount">+</button>
+					</div>
+
+					<div class="travellers-amount">
+						<button class="dec-amount">-</button>
+						<span class="traveller-amount"><span class="anoumt-value">0</span> Child</span>
+						<button class="inc-amount">+</button>
+					</div>
+
+					<div class="travellers-amount">
+						<button class="dec-amount">-</button>
+						<span class="traveller-amount"><span class="anoumt-value">0</span> Infant</span>
+						<button class="inc-amount">+</button>
+					</div>
+
+
+				</div>
+
+					<select class="class-cabine-input">
+						<option disabled="true" selected>All Class/Cabin</option>
+					</select>
+
+
+					<div class="airlines">
+						<input type="text" class="airlines-input" placeholder="Preffered Airlines">
+						<input type="text" class="airlines-input">
+					</div>
+
+
+				<input id="flexible-dates" type="radio" name="more-options" checked>
+					<label for="flexible-dates" class="radio-options">Flexible dates</label>
+
+					<input id="direct-flights" type="radio" name="more-options">
+					<label for="direct-flights" class="radio-options">Direct flights</label>
+
+					<input id="fares-with" type="radio" name="more-options">
+					<label for="fares-with" class="radio-options">Fares with no penalties</label>
+
+					<input id="nearby-airports" type="radio" name="more-options">
+					<label for="nearby-airports" class="radio-options">Nearby airports</label>
+					
+					<button class="flight-search-btn search-btn">Search Flight</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="advantage">
+
+		<div class="average-container container">
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/hotel-adv-ico.png" alt="">
+					<div class="advantage-title">best hotels</div>
+					<button class="advantage-btn">book rooms now</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/shild-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/prise-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="latest-offer">
+		<h2>latest offer</h2>
+		<div class="offer-container">
+
+			<button class="to-left"></button>
+			<button class="to-right"></button>
+
+			<div class="offer-card">
+			<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+				<div class="offer-sale">30%off</div>
+			</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+
+		<div class="footer-container container">
+
+			<div class="footer-section nav-footer-section">
+				<h2>navigation</h2>
+				<nav class="nav-footer">
+					<a href="#">Home</a>
+					<a href="#">Tours</a>
+					<a href="#">Special Offer</a>
+					<a href="#">Where We Go</a>
+					<a href="#">Contact us</a>
+				</nav>
+			</div>
+
+			<div class="footer-section trip-footer-section">
+				<h2>recent trip</h2>
+				<nav class="trip-nav">
+					<a href="#">USA</a>
+					<a href="#">UK</a>
+					<a href="#">BANG KOK</a>
+					<a href="#">UAE</a>
+					<a href="#">THAILAND</a>
+				</nav>
+			</div>
+
+			<div class="footer-section gallery-footer-section">
+				<h2>tour gallery</h2>
+				<div class="galety-container">
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+				</div>
+			</div>
+
+			<div class="footer-section addres-footer-section">
+				<h2>addres</h2>
+				<p>
+					Address : Area<br>
+					Phone : 0000 000 0000<br>
+					Email : info@site.com
+				</p>
+			</div>
+
+		</div>
+	</footer>
+
+
+<!-- <script src="js/main.js"></script> -->
+</body>
+</html>

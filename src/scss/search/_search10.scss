@@ -1,0 +1,249 @@
+@import 'glob-var/_glob-var.scss';
+@import 'mixin/_mixin.scss';
+
+.search{
+	height: 720px;
+	background-image: url(../img/bg-search.png);
+}
+
+.search-container {
+	height: 420px;
+	width: 620px;
+	display: flex;
+	margin-left: 15vw;
+	margin-top: 50px;
+}
+
+.search-tabs {
+	width: 20%;
+	height: 100%;
+	background-color: #f5f5f5;
+}
+
+.sarch-form{
+	width: 80%;
+	height: 100%;
+	background-color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.search-tab{
+	display: block;
+	height: 85px;
+	padding-top: 50px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center 15px;
+}
+
+.fligth-search {
+	height: 100%;
+}
+
+.flight-tab{
+	background-image: url(../img/flight10.png);
+}
+.cruise-tab{
+	background-image: url(../img/cruise10.png);
+}
+.hotel-tab{
+	background-image: url(../img/hotel10.png);
+}
+
+.active-tab {
+	background-color: #fff;
+	color: $background-color-bright;
+}
+
+.active-tab.flight-tab{
+	background-image: url(../img/flight10-active.png);
+}
+.active-tab.cruise-tab{
+	background-image: url(../img/cruise10-active.png);
+}
+.active-tab.hotel-tab{
+	background-image: url(../img/hotel10-active.png);
+}
+
+.flight-types{
+	display: flex;
+	justify-content: center;
+}
+
+.flight-type {
+	height: 20px;
+	padding-left: 30px;
+	margin-top: 25px;
+}
+
+.flight-type:not(:last-child) {
+	margin-right: 20px;
+}
+
+.locations{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.location-input{
+	width: 48%;
+	height: 45px;
+	padding-left: 35px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+}
+
+.return-input{
+	background-image: url(../img/plane-ret.png);
+
+}
+.departure-input{
+	background-image: url(../img/plane-dep.png);
+}
+
+.dates{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.date-input{
+	width: 48%;
+	height: 45px;
+	padding-left: 35px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+}
+
+.departure-date{
+	background-image: url(../img/date-ico.png);
+}
+.return-date{
+	background-image: url(../img/date-ico.png);
+}
+
+.travellers{
+	display: flex;
+	justify-content: space-between;
+	height: 45px;
+	margin-top: 10px;
+
+
+
+} 
+
+.travellers * {
+	height: 45px;
+
+}
+
+.travellers-amount{
+	width: 32%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+	line-height: 2.5;
+
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+}
+
+.travellers-amount button{
+	width: 35px;
+}
+
+.traveller-amount {
+	width: auto;
+	display: block;
+}
+
+.class-cabine-input {
+	margin-top: 10px;
+	width: 100%;
+	height: 45px;
+	padding-left: 20px;
+		background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+}
+
+.airlines {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.airlines-input {
+	width: 48%;
+	height: 45px;
+	padding-left: 20px;
+		background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+}
+
+.radio-options{
+	display: inline-block;
+	padding-left: 30px;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.radio-options, .flight-type {
+	background-image: url(../img/radio-unchecked.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+#round-trip:checked ~ label[for="round-trip"] {
+	background-image: url(../img/radio-checked.png);
+}
+#one-way:checked ~ label[for="one-way"] {
+	background-image: url(../img/radio-checked.png);
+}
+#multi-city:checked ~ label[for="multi-city"] {
+	background-image: url(../img/radio-checked.png);
+}
+
+.flight-types input {
+	display: none;
+}
+
+#flexible-dates:checked ~ label[for="flexible-dates"] {
+	background-image: url(../img/radio-checked.png);
+}
+#direct-flights:checked ~ label[for="direct-flights"] {
+	background-image: url(../img/radio-checked.png);
+}
+#fares-with:checked ~ label[for="fares-with"] {
+	background-image: url(../img/radio-checked.png);
+}
+#nearby-airports:checked ~ label[for="nearby-airports"] {
+	background-image: url(../img/radio-checked.png);
+}
+
+#flexible-dates,
+#direct-flights,
+#fares-with,
+#nearby-airports {
+	display: none;
+}
+
+.search-btn {
+	width: 200px;
+	height: 45px;
+	float: right;
+	margin-top: 15px;
+	background-color: $background-color-bright;
+	border: none;
+	color: #fff;
+	background-image: url(../img/search-ico.png);
+	background-repeat: no-repeat;
+	background-position: 30px center;
+}

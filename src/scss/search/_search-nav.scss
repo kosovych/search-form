@@ -1,3 +1,7 @@
+@import 'glob-var/_glob-var.scss';
+@import 'mixin/_mixin.scss';
+
+
 .search-nav{
 
 	@include font("Dense", 30px, 500);
