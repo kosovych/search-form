@@ -12,7 +12,7 @@
 		<div class="header-container container">
 
 			<div class="user-action">
-					<div class="user-action__el">
+				<div class="user-action__el">
 					<a class="text-center" href="#">my account</a>
 				</div>
 				
@@ -25,13 +25,13 @@
 				</div>
 			</div>
 
-				<div class="social">
-					<a href="#" class="social_link twitter"></a>
-					<a href="#" class="social_link facebook"></a>
-					<a href="#" class="social_link dribbble"></a>
-					<a href="#" class="social_link linkedin"></a>
-					<a href="#" class="social_link flickr"></a>
-				</div>
+			<div class="social">
+				<a href="#" class="social_link twitter"></a>
+				<a href="#" class="social_link facebook"></a>
+				<a href="#" class="social_link dribbble"></a>
+				<a href="#" class="social_link linkedin"></a>
+				<a href="#" class="social_link flickr"></a>
+			</div>
 		</div>
 	</header>
 
@@ -40,15 +40,15 @@
 		<nav class="search-nav">
 			<div class="search-nav-container container">
 				<div class="logo-container">
-					<a href="#" class="search-nav__item col-md-2 text-center">logo</a>
+					<a href="#" class="search-nav__item">logo</a>
 				</div>
 				<div class="nav-link-container">
-					<a href="#" class="search-nav__item col-md-1 text-center col-md-offset-2">home</a>
-					<a href="#" class="search-nav__item col-md-1 text-center">hotells</a>
-					<a href="#" class="search-nav__item col-md-2 text-center">hot deals</a>
-					<a href="#" class="search-nav__item col-md-1 text-center">flight</a>
-					<a href="#" class="search-nav__item col-md-2 text-center">holiday rental</a>
-					<a href="#" class="search-nav__item col-md-1 text-center">contact</a>
+					<a href="#" class="search-nav__item">home</a>
+					<a href="#" class="search-nav__item">hotells</a>
+					<a href="#" class="search-nav__item">hot deals</a>
+					<a href="#" class="search-nav__item">flight</a>
+					<a href="#" class="search-nav__item">holiday rental</a>
+					<a href="#" class="search-nav__item">contact</a>
 				</div>
 			</div>
 		</nav>
@@ -56,13 +56,13 @@
 		<div class="search-container">
 
 			<div class="search-tabs">
-				<label class="search-tab flight-tab active-tab">Flight</label>
-				<label class="search-tab cruise-tab">Cruise</label>
-				<label class="search-tab hotel-tab">Hotel</label>
+				<label for="search-type-flight" class="search-tab flight-tab active-tab">Flight</label>
+				<label for="search-type-cruise" class="search-tab cruise-tab">Cruise</label>
+				<label for="search-type-hotel" class="search-tab hotel-tab">Hotel</label>
 			</div>
 
 			<div class="sarch-form">
-
+				<input id="search-type-flight" type="radio" name="search-type" checked>
 				<div class="fligth-search">
 					<div class="flight-types">
 						<input type="radio" name="flight-type" id="round-trip" checked>
@@ -75,38 +75,38 @@
 						<label for="multi-city" class="flight-type">Multi City</label>
 					</div>
 
-				<div class="locations">
-					<input type="text" class="location-input departure-input" placeholder="Departure">
-					<input type="text" class="location-input return-input" placeholder="Return">
-				</div>
-
-				<div class="dates">
-					<input type="text" class="date-input departure-date">
-					<input type="text" class="date-input return-date">
-				</div>
-
-				<div class="travellers">
-
-					<div class="travellers-amount">
-						<button class="dec-amount">-</button>
-						<span class="traveller-amount"><span class="anoumt-value">0</span> Adult</span>
-						<button class="inc-amount">+</button>
+					<div class="locations">
+						<input type="text" class="location-input departure-input" placeholder="Departure">
+						<input type="text" class="location-input return-input" placeholder="Return">
 					</div>
 
-					<div class="travellers-amount">
-						<button class="dec-amount">-</button>
-						<span class="traveller-amount"><span class="anoumt-value">0</span> Child</span>
-						<button class="inc-amount">+</button>
+					<div class="dates">
+						<input type="text" class="date-input departure-date">
+						<input type="text" class="date-input return-date">
 					</div>
 
-					<div class="travellers-amount">
-						<button class="dec-amount">-</button>
-						<span class="traveller-amount"><span class="anoumt-value">0</span> Infant</span>
-						<button class="inc-amount">+</button>
+					<div class="travellers">
+
+						<div class="travellers-amount">
+							<button class="dec-amount">-</button>
+							<span class="traveller-amount"><span class="anoumt-value">0</span> Adult</span>
+							<button class="inc-amount">+</button>
+						</div>
+
+						<div class="travellers-amount">
+							<button class="dec-amount">-</button>
+							<span class="traveller-amount"><span class="anoumt-value">0</span> Child</span>
+							<button class="inc-amount">+</button>
+						</div>
+
+						<div class="travellers-amount">
+							<button class="dec-amount">-</button>
+							<span class="traveller-amount"><span class="anoumt-value">0</span> Infant</span>
+							<button class="inc-amount">+</button>
+						</div>
+
+
 					</div>
-
-
-				</div>
 
 					<select class="class-cabine-input">
 						<option disabled="true" selected>All Class/Cabin</option>
@@ -119,7 +119,7 @@
 					</div>
 
 
-				<input id="flexible-dates" type="radio" name="more-options" checked>
+					<input id="flexible-dates" type="radio" name="more-options" checked>
 					<label for="flexible-dates" class="radio-options">Flexible dates</label>
 
 					<input id="direct-flights" type="radio" name="more-options">
@@ -132,7 +132,98 @@
 					<label for="nearby-airports" class="radio-options">Nearby airports</label>
 					
 					<button class="flight-search-btn search-btn">Search Flight</button>
+				</div>
+				<input id="search-type-cruise" type="radio" name="search-type">
+				<div class="cruise-search">
 
+					<div class="cruise-input-wrap">
+						<select class="cruise-select departure cruise-input" name="departure">
+							<option disabled selected="">Dectination</option>
+						</select>
+					</div>
+
+					<div class="cruise-input-wrap">
+						<select class="cruise-select departure-port cruise-input" name="departure-port">
+							<option disabled selected>Departure Port</option>
+						</select>
+					</div>
+
+					<div class="cruise-input-wrap">
+						<select class="cruise-select cruise-lines cruise-input" name="cruise-lines">
+							<option disabled selected>Cruise Lines</option>
+						</select>
+					</div>
+
+					<div class="cruise-input-wrap">
+						<select class="cruise-select cruise-ships cruise-input" name="cruise-ships">
+							<option disabled selected>Cruise Shops</option>
+						</select>
+					</div>
+
+					<input type="text" placeholder="Dates" class="cruise-date cruise-input">
+
+					<div class="cruise-input-wrap">
+						<select name="cruise-length cruise-input" id="" class="cruise-select cruise-length cruise-input">
+							<option disabled selected>Length</option>
+						</select>
+					</div>
+
+					<button class="reset-cruise-search">Reset</button>
+
+					<button class="cruise-search-btn search-btn">Search Cruise</button>
+				</div>
+				<input id="search-type-hotel" type="radio" name="search-type">
+				<div class="hotel-search">
+
+					<input type="text" class="hotel-input hotel-loc-input" placeholder="City, Location or Airport">
+					
+					<div class="hotel-input hotel-date-input">
+						<input type="text" class="hotel-departure" placeholder="Departure Date">
+						<input type="text" class="hotel-return-date" placeholder="Return Date">
+					</div>
+
+					<div class="hotel-input-wrap">
+						<select name="hotel-rating" class="hotel-input select-hotel-rating">
+							<option selected disabled>Rating</option>
+						</select>
+					</div>
+
+					<div class="hotel-travellers hotel-input">
+
+						<div class="hotel-travellers-amount">
+							<button class="dec-amount">-</button>
+							<span class="hotel-traveller-amount"><span class="anoumt-value">0</span> Room</span>
+							<button class="inc-amount">+</button>
+						</div>
+
+						<div class="hotel-travellers-amount">
+							<button class="dec-amount">-</button>
+							<span class="hotel-traveller-amount"><span class="anoumt-value">0</span> Adult</span>
+							<button class="inc-amount">+</button>
+						</div>
+
+						<div class="hotel-travellers-amount">
+							<button class="dec-amount">-</button>
+							<span class="hotel-traveller-amount">
+								<span class="anoumt-value">0</span> 
+								Children 
+							</span>
+							<button class="inc-amount">+</button>
+						</div>
+						
+						<div class="hotel-travellers-amount chlild-age-1">
+							<span class="child-age-title">#1 Child's Age</span>
+							<input class="child-age-value" type="text">
+						</div>
+						
+						<div class="hotel-travellers-amount chlild-age-2">
+							<span class="child-age-title">#2 Child's Age</span>
+							<input class="child-age-value" type="text">
+						</div>
+
+					</div>
+
+					<button class="search-btn">Search Hotel</button>
 				</div>
 
 			</div>
@@ -187,10 +278,10 @@
 			<button class="to-right"></button>
 
 			<div class="offer-card">
-			<div class="price-cont">
+				<div class="price-cont">
 					<div class="offer-price">$300.00</div>
-				<div class="offer-sale">30%off</div>
-			</div>
+					<div class="offer-sale">30%off</div>
+				</div>
 				<div class="offer-img"></div>
 				<div class="offer-title">iseland</div>
 				<a href="#" class="see-tour-details">see tour details ></a>
@@ -278,7 +369,7 @@
 		</div>
 	</footer>
 
-
-<!-- <script src="js/main.js"></script> -->
+	<script src="lib/js/jquery-3.3.1.min.js"></script>
+	<script src="js/seacrh-form-10.js"></script>
 </body>
 </html>

@@ -4,13 +4,14 @@
 .search{
 	height: 720px;
 	background-image: url(../img/bg-search.png);
+	font-family: "OpenSans", sans-serif;
 }
 
 .search-container {
 	height: 420px;
 	width: 620px;
 	display: flex;
-	margin-left: 15vw;
+	margin-left: 25%;
 	margin-top: 50px;
 }
 
@@ -18,14 +19,18 @@
 	width: 20%;
 	height: 100%;
 	background-color: #f5f5f5;
+	font-size: 15px;
+	-webkit-box-shadow: inset -14px 1px 18px -17px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -14px 1px 18px -17px rgba(0,0,0,0.75);
+	box-shadow: inset -14px 1px 18px -17px rgba(0,0,0,0.75);
 }
 
 .sarch-form{
 	width: 80%;
 	height: 100%;
 	background-color: #fff;
-	padding-left: 10px;
-	padding-right: 10px;
+	font-size: 13px;
+	color: $text-color-form-main;
 }
 
 .search-tab{
@@ -39,6 +44,8 @@
 
 .fligth-search {
 	height: 100%;
+	padding: 10px;
+	padding-top: 0;
 }
 
 .flight-tab{
@@ -54,6 +61,7 @@
 .active-tab {
 	background-color: #fff;
 	color: $background-color-bright;
+	border-bottom: 1px solid $border-color-form;
 }
 
 .active-tab.flight-tab{
@@ -64,6 +72,10 @@
 }
 .active-tab.hotel-tab{
 	background-image: url(../img/hotel10-active.png);
+}
+
+.fligth-search {
+	display: none;
 }
 
 .flight-types{
@@ -150,7 +162,7 @@
 	align-items: center;
 	justify-content: space-between;
 	align-content: center;
-	line-height: 2.5;
+	line-height: 3.5;
 
 	background-color: #f5f5f5;
 	border: 1px solid $border-color-form;
@@ -170,8 +182,9 @@
 	width: 100%;
 	height: 45px;
 	padding-left: 20px;
-		background-color: #f5f5f5;
+	background-color: #f5f5f5;
 	border: 1px solid $border-color-form;
+	color: $text-color-form-main;
 }
 
 .airlines {
@@ -184,7 +197,7 @@
 	width: 48%;
 	height: 45px;
 	padding-left: 20px;
-		background-color: #f5f5f5;
+	background-color: #f5f5f5;
 	border: 1px solid $border-color-form;
 }
 
@@ -243,7 +256,236 @@
 	background-color: $background-color-bright;
 	border: none;
 	color: #fff;
+	font-size: 19px;
 	background-image: url(../img/search-ico.png);
 	background-repeat: no-repeat;
-	background-position: 30px center;
+	background-position: 15px center;
+}
+
+/*cruise search*/
+
+.cruise-search{
+	padding: 5px 10px 10px 10px;
+	display: none;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cruise-input-wrap{
+	width: 48%;
+	height: 45px;
+	margin-top: 15px;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+	overflow: hidden;
+	background-image: url(../img/arrow-bottom.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+.cruise-input {
+	width: 100%;
+	height: 45px;
+	background-color: transparent;
+	border: none;
+	color: $text-color-form-main;
+
+}
+
+.cruise-select {
+	width: 110%;
+	padding-left: 35px;
+}
+
+.cruise-date {
+	width: 48%;
+	height: 45px;
+	margin-top: 15px;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+}
+
+.cruise-search-btn {
+	width: 48%;
+	height: 45px;
+
+}
+
+.reset-cruise-search {
+	width: 80px;
+	height: 45px;
+	margin-top: 15px;
+	margin-left: calc(48% - 80px);
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+	color: $text-color-form-main;
+
+}
+
+.cruise-date {
+	padding-left: 35px;
+}
+
+.departure {
+	background: url(../img/location-lg.png) no-repeat 15px center;
+}
+.departure-port {
+	background: url(../img/location-lg.png) no-repeat 15px center;
+}
+.cruise-lines {
+	background: url(../img/cruise10.png) no-repeat 10px center;
+}
+.cruise-ships {
+	background: url(../img/cruise10.png) no-repeat 10px center;
+}
+.cruise-date {
+	background: url(../img/date-ico.png) no-repeat 15px center;
+}
+.cruise-length {
+	background: url(../img/length-ico.png) no-repeat 15px center;
+}
+
+.reset-cruise-search {
+	padding-left: 20px;
+	background-image: url(../img/reset-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+/*// hotel-search*/
+
+.hotel-search {
+	padding: 0px 10px 10px 10px;
+	display: none;
+}
+
+.hotel-input {
+	width: 100%;
+	height: 45px;
+	margin-top: 20px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+
+.hotel-loc-input{
+	padding-left: 30px;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+	background-image: url(../img/location-lg.png);
+
+}
+
+.hotel-date-input {
+	display: flex;
+	flex-wrap: nowrap;
+	font-size: 0;
+}
+
+.hotel-departure,
+.hotel-return-date {
+	width: 50%;
+	padding-left: 30px;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+	box-sizing: border-box;
+	background-image: url(../img/date-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+.hotel-input-wrap {
+	width: 100%;
+	margin-top: 15px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+	background-image: url(../img/arrow-bottom.png);
+	background-repeat: no-repeat;
+	background-position: 97% center;
+}
+
+.select-hotel-rating{
+	margin: 0;
+	width: 105%;
+	border: none;
+	background-color: transparent;
+	padding-left: 30px;
+	background-image: url(../img/star-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	color:$text-color-form-main;
+}
+
+.hotel-travellers {
+	display: flex;
+	height: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.hotel-travellers-amount {
+	width: 32%;
+	margin-bottom: 15px;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+}
+
+.dec-amount,
+.inc-amount {
+	height: 100%;
+	width: 35px;
+	border: none;
+	color:$text-color-form-main;
+	font-size: 24px;
+}
+
+
+.hotel-traveller-amount {
+	height: 100%;
+	line-height: 3.5;
+}
+.anoumt-value {
+	height: 100%;
+}
+
+.chlild-age-1,
+.chlild-age-2 {
+	background-color: transparent;
+	border: none;
+	font-size: 13px;
+}
+
+.chlild-age-2 {
+	margin-right: 34%;
+}
+
+
+.child-age-value{
+	width: 50px;
+	height: 45px;
+	background-color: #f5f5f5;
+	border: 1px solid $border-color-form;
+	font-size: 13px;
+}
+
+
+input#search-type-flight:checked ~  .fligth-search{
+	display: block;
+}
+input#search-type-cruise:checked ~  .cruise-search{
+	display: flex;
+}
+input#search-type-hotel:checked  ~ .hotel-search{
+	display: block;
+}
+
+input#search-type-flight,
+input#search-type-cruise,
+input#search-type-hotel {
+	display: none;
 }

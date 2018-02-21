@@ -9,7 +9,7 @@ body > *{
 
 
 *{
-	// outline: 1px solid red;
+	/*outline: 1px solid red;*/
 	box-sizing: border-box;
 
 }
@@ -30,4 +30,8 @@ a:hover{
 .container{
 	width: 1174px;
 	margin: 0 auto;
+}
+
+.display-none {
+	display: none;
 }
