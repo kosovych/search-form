@@ -157,7 +157,7 @@
 	}
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 570px) {
 	.user-action{
 		width: 100%;
 		justify-content: space-between;
@@ -172,8 +172,72 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
+	.search-form-tabs__tab {
+		text-align: right;
+		padding-right: 10px;
+	}
+	.search-flight,
+	.search-cruise,
+	.serch-hotel-btn{
+		background-position: 30px center;
+	}
 	.offer-container{
 		flex-wrap: wrap;
+		width: 90%;
+	}
+
+	.advantage-description{
+		height: auto;
+	}
+	.advantage-btn {
+		height: auto;
+		padding: 5px 15px;
 	}
 }
 
+@media all and (max-width: 465px) {
+	.adult-amount-label,
+	.children-amount-label{
+		margin-right: 0;
+	}
+	.adult-amount-label{
+		width: 40%;
+	}
+	.room-container{
+		width: 100%;
+	}
+
+	.children-amount-container{
+		padding-right: 5px;
+	}
+
+	.advantage-title{
+		padding: 5px 20px;
+		text-align: center;
+	}
+	.advantage-btn{
+		height: 70px;
+	}
+}
+
+@media all and (max-width: 430px) {
+	.search-form-tabs__tab{
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 380px) {
+	.advantage-carg_img {
+		display: none;
+	}
+	.advantage-title{
+		color: #fff;
+	}
+	.container {
+		width: 100%;
+	}
+	.to-right,
+	.to-left {
+		display: none;
+	}
+}

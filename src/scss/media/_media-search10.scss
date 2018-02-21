@@ -261,21 +261,25 @@
 	.search-container{
 		height: auto;
 	}
+
 	.search-tabs{
 		width: 10%;
 	}
 	.sarch-form{
 		width: 90%;
+		padding-bottom: 10px;
 	}
 	.travellers{
 		flex-wrap: wrap;
 		height: auto;
 	}
 	.travellers-amount{
-		width: 51%;
+		width: 75%;
+		margin-right: 0;
 	}
 	.hotel-travellers-amount{
-		width: 51%;
+		width: 75%;
+		margin-right: 0;
 	}
 }
 
