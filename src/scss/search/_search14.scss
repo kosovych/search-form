@@ -1,0 +1,429 @@
+.search {
+	background-image: url(../img/bg-search.png);
+	background-size: cover;
+	height: 720px;
+	@include font("OpenSans", 15px, 300);
+
+}
+
+.search-container {
+	width: 805px;
+	height: 350px;
+	margin-top: 120px;
+	margin-left: 22vw;
+}
+
+/*140
+60*/
+
+.search-tab {
+	display: inline-block;
+	width: 140px;
+	height: 60px;
+	background-color: #fff;
+	font-size: 21px;
+	color: $text-color-form-main;
+	line-height: 60px;
+	text-align: center;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+}
+
+.active-tab {
+	background-color: #eff0f2;
+}
+
+.flight-tab{
+	background-image: url(../img/new_plane.png);
+}
+.cruise-tab{
+	background-image: url(../img/new_ship.png);
+}
+.hotel-tab{
+	background-image: url(../img/new_hotel.png);
+	background-position: 20px center;
+}
+
+.search-inner {
+	height: 290px;
+	padding: 15px;
+	background-color: #eff0f2;
+	color: #7a7a7a;
+}
+
+.trip-type {
+	display: inline-block;
+	padding-left: 20px;
+	font-size: 17px;
+	margin-right: 20px;
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	background-image: url(../img/uncheck-new.png);
+	margin-bottom: 20px;
+}
+
+
+input#round-type-input:checked ~ .round-type {
+	background-image: url(../img/check-new.png);
+}
+input#one-type-input:checked ~ .one-type {
+	background-image: url(../img/check-new.png);
+}
+input#multi-type-input:checked ~ .multi-type {
+	background-image: url(../img/check-new.png);
+}
+
+input#round-type-input,
+input#one-type-input,
+input#multi-type-input {
+	display: none;
+}
+
+.search-flight{
+	display: none;
+}
+
+.direction {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	background-image: url(../img/direction-ico.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.direction-label{
+	height: 40px;
+}
+
+.direction-from,
+.direction-to {
+	width: 45%;
+	display: flex;
+	height: 40px;
+	font-size: 15px;
+	border: 1px solid #bdbdbd;
+}
+.direction-label {
+	width: 70px;
+	font-size: 15px;
+	line-height: 2.5;
+	text-align: center;
+	border-right: 1px solid #bdbdbd;
+}
+
+.direction-from-input,
+.direction-to-input {
+	width: calc(100% - 70px);
+	font-size: 15px;
+	border: none;
+	padding-left: 10px;
+}
+
+.flight-options{
+	display: flex;
+	justify-content: space-between;	
+}
+
+.flight-option {
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.flight-departure,
+.flight-return {
+	height: 40px;
+	width: 47%;
+	padding-left: 35px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-image: url(../img/new_date-ico.png);
+	border: 1px solid #bdbdbd;
+	margin-bottom: 15px;
+}
+
+.taveller-amount{
+	display: flex;
+	width: 47%;
+	height: 40px;
+	justify-content: space-between;
+	align-content: center;
+	border: 1px solid #bdbdbd;
+	margin-bottom: 15px;
+}
+
+.traveller-title,
+.traveller-value {
+	line-height: 2.5;
+	background-color: #fff;
+	width: 60px;
+	text-align: center;
+}
+
+.red-traveler,
+.inc-traveler {
+	width: 30px;
+	background-color: #f1f1f1;
+	color: #7a7a7a;
+	font-size: 22px;
+}
+
+.red-traveler{
+	border: none;
+	border-left: 1px solid #bdbdbd;
+	border-right: 1px solid #bdbdbd;
+
+}
+.inc-traveler{
+	border: none;
+	border-left: 1px solid #bdbdbd;
+}
+
+.flight-class {
+	display: block;
+	width: 47%;
+	height: 40px;
+	overflow: hidden;
+	border: 1px solid #bdbdbd;
+	background-image: url(../img/arrow-bottom.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	background-color: #fff;
+}
+
+.flight-class-select{
+	width: 110%;
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	color: #7a7a7a;
+	padding-left: 5px;
+}
+
+.search-flight-btn {
+	display: block;
+	width: 210px;
+	height: 40px;
+	background-color: #f78c2b;
+	border: none;
+	font-size: 17px;
+	margin-top: -10px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-left: calc(100% - 210px);
+	background-image: url(../img/new_search-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10% center;
+}
+
+.addtional-options {
+	display: block;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.addtional-options:hover {
+	text-decoration: none;
+}
+
+.search-cruise {
+	display: none;
+}
+
+.cruise-select-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.destinations,
+.departure-port,
+.cruise-lines,
+.cruise-ships {
+	width: 48%;
+	overflow: hidden;
+	border: 1px solid #bdbdbd;
+	margin-bottom: 15px;
+	background-color: #fff;
+	
+}
+
+.destinations-select,
+.departure-port-select,
+.cruise-lines-select,
+.cruise-ships-select {
+	width: 105%;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+	padding-left: 10px;
+	color: #7a7a7a;
+	background-image: url(../img/arrow-bottom.png);
+	background-repeat: no-repeat;
+	background-position: 93% center;
+	background-color: #fff;
+}
+
+.dates-container {
+	display: flex;
+	justify-content: space-between;
+	width: 48%;
+}
+
+.cruise-date,
+.cruise-length-container {
+	width: 47%;
+	height: 40px;
+	background-color: #fff;
+	background-image: url(../img/new_date-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	border: 1px solid #bdbdbd;
+
+}
+
+.cruise-date {
+	padding-left: 35px;
+	
+}
+
+.cruise-length-select {
+	padding-left: 35px;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	color: #7a7a7a;
+	border: none;
+}
+
+.cruise-btn-container {
+	width: 48%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cruise-reset-btn {
+	height: 40px;
+	width: 100px;
+	background-color: #fff;
+	border: 1px solid #bdbdbd;
+	color: #7a7a7a;
+	background-image: url(../img/reset-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10% center;
+
+}
+.cruise-seearch-btn {
+	height: 40px;
+	width: 210px;
+	border: none;
+	font-size: 17px;
+	color: #fff;
+	letter-spacing: 1px;
+
+	background-color: #f78c2b;
+	background-image: url(../img/new_search-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10% center;
+}
+
+.search-hotel {
+	width: 100%;
+	display: none;
+	font-size: 0;
+}
+
+.hotel-location {
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	padding-left: 10px;
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+
+.hotel-input {
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	padding-left: 10px;
+	color: #7a7a7a;
+	background-color: #fff;
+	margin-bottom: 15px;
+	font-size: 15px;
+	margin-right: 20px;
+	border: 1px solid #bdbdbd;
+
+}
+
+.hotel-departure,
+.hotel-return {
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	background-image: url(../img/new_date-ico.png);
+	border: 1px solid #bdbdbd;
+
+}
+
+.hotel-taveller-amount {
+	font-size: 15px;
+	display: inline-flex;
+	width: 160px;
+	border: 1px solid #bdbdbd;
+	margin-bottom: 15px;
+	margin-right: 20px;
+
+}
+
+.search-hotel-btn {
+	float: right;
+	height: 40px;
+	width: 210px;
+	border: none;
+	font-size: 17px;
+	color: #fff;
+	letter-spacing: 1px;
+	background-color: #f78c2b;
+	background-image: url(../img/new_search-ico.png);
+	background-repeat: no-repeat;
+	background-position: 10% center
+}
+
+input#search-flight-type:checked ~ .search-flight {
+	display: block;
+}
+input#search-cruise-type:checked ~ .search-cruise {
+	display: block;
+}
+input#search-hotel-type:checked ~ .search-hotel {
+	display: block;
+}
+
+input#search-flight-type,
+input#search-cruise-type,
+input#search-hotel-type {
+	display: none;
+}
+
+.advantage {
+	width: 100%;
+	background-image: none !important;
+	height: auto !important;
+}
+
+.latest-offer {
+	margin-top: 100px !important;
+}
+
+.advantage h2 {
+	font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}

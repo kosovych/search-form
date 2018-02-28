@@ -1,0 +1,226 @@
+@media all and (max-width: 1400px) {
+
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.latest-offer{
+		width: 95%;
+
+	}
+
+	.search-form-container{
+		width: auto;
+	}
+
+	.offer-container {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.advantage_img{
+		justify-content: space-between;
+	}
+}
+
+
+
+@media all and (max-width: 1070px){
+
+	.search {
+		background-position: center;
+	}
+
+	.search-container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.addtional-options-container{
+		top: 20px;
+		width: auto;
+		flex-direction: column;
+		height: auto;
+	}
+	.addtional-options-container > * {
+		width: 200px;
+		height: 50px;
+	}
+}
+
+@media all and (max-width: 850px)  {
+	.search-container {
+		width: 98%;
+
+	}
+}
+
+
+
+@media all and (max-width: 800px) {
+
+	.search-nav-container {
+		flex-wrap: wrap;
+	}
+
+	.search-nav{
+		height: auto;
+	}
+}
+
+@media all and (max-width: 700px) {
+
+	.footer-section  {
+		width: 200px;
+		margin-right: 20px;
+	}
+
+	.footer-container{
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+@media all and (max-width: 683px) {
+	.flight-from{
+		width: 49%;
+	}
+	.flight-to{
+		width: 49%;
+	}
+}
+
+@media all and (max-width: 660px) {
+	.search-container {
+		height: auto;
+	}
+	.search {
+		height: auto;
+		padding-bottom: 120px;
+	}
+	.search-inner {
+		height: 400px;
+	}
+
+	.direction{
+		flex-direction: column;
+		height: auto;
+		background-image: none;
+	}
+	.direction-from {
+		margin-bottom: 15px;
+	}
+	.direction-from,
+	.direction-to {
+		width: 100%;
+	}
+
+	.flight-options{
+		flex-direction: column;
+	}
+	.flight-option {
+		width: 65%;
+	}
+
+	.cruise-select-container {
+		flex-direction: column;
+	}
+
+	.dates-container {
+		margin-bottom: 15px;
+	}
+
+	.destinations,
+	.departure-port,
+	.cruise-lines,
+	.cruise-ships,
+	.dates-container,
+	.cruise-btn-container {
+		width: 100%;
+	}
+
+
+	.advantage-btn {
+		width: 95%;
+	}
+
+	.offer-container{
+		width: 95%;
+	}
+	.advantage-btn{
+		height: 50px;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.user-action{
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;	
+	}
+	.header {
+		height: auto;
+	}
+	.header-container{
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.addtional-options-container{
+		left: 0;
+	}
+
+	.offer-container{
+		flex-wrap: wrap;
+	}
+
+	.latest-offer-search13{
+		width: 90%;
+	}
+
+}
+
+@media all and (max-width: 480px){
+	.flight-option {
+		width: 80%;
+	}
+
+	.search-tab {
+		width: 30%;
+		padding-left: 30px;
+	}
+
+	.advantage, .advantage-btn {
+		font-size: 10px;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 420px) {
+	.search-inner{
+		height: 440px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.search-tab {
+		font-size: 15px;
+	}
+	.flight-option {
+		width: 100%;
+	}
+
+	.to-left,
+	.to-right {
+		display: none;
+	}
+}
+
+@media all and (max-width: 360px) {
+	.cruise-reset-btn {
+		margin-right: 10px;
+	}
+	.cruise-seearch-btn{
+		text-align: right;
+	}
+}

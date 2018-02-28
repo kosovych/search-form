@@ -10,7 +10,8 @@ gulp.task('serve', () => {
         server: {
         	injectChanges: true,
             baseDir: "./build/",
-            index: "search-form-10.html"
+            // index: "search-form-10.html"
+            index: "search-form-14.html"
             // index: "search-form-13.html"
             // index: "index.html"
         },

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search Form 14</title>
+	<link rel="stylesheet" href="css/main-search14.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-container container">
+
+			<div class="user-action">
+				<div class="user-action__el">
+					<a class="text-center" href="#">my account</a>
+				</div>
+				
+				<div class="user-action__el">
+					<a class="text-center" href="#">login</a>
+				</div>
+				
+				<div class="user-action__el user-action__el_phone">
+					<a class=" text-center" href="#">18000-0000-0000</a>
+				</div>
+			</div>
+
+			<div class="social">
+				<a href="#" class="social_link twitter"></a>
+				<a href="#" class="social_link facebook"></a>
+				<a href="#" class="social_link dribbble"></a>
+				<a href="#" class="social_link linkedin"></a>
+				<a href="#" class="social_link flickr"></a>
+			</div>
+		</div>
+	</header>
+
+	<section class="search">
+		<nav class="search-nav">
+			<div class="search-nav-container container">
+				<div class="logo-container">
+					<a href="#" class="search-nav__item col-md-2 text-center">logo</a>
+				</div>
+				<div class="nav-link-container">
+					<a href="#" class="search-nav__item">home</a>
+					<a href="#" class="search-nav__item">hotells</a>
+					<a href="#" class="search-nav__item">hot deals</a>
+					<a href="#" class="search-nav__item">flight</a>
+					<a href="#" class="search-nav__item">holiday rental</a>
+					<a href="#" class="search-nav__item">contact</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="search-container">
+			<div class="search-tabs">
+				<label for="search-flight-type" class="search-tab flight-tab active-tab">Flight</label>	
+				<label for="search-cruise-type" class="search-tab cruise-tab">Cruise</label>
+				<label for="search-hotel-type" class="search-tab hotel-tab">Hotel</label>
+			</div>
+			<div class="search-inner">
+
+				<input type="radio" name="search-type" id="search-flight-type" checked>
+				<div class="search-flight">
+					<input type="radio" name="trip-type" id="round-type-input" checked>
+					<label for="round-type-input" class="trip-type round-type">Round Trip</label>
+
+					<input type="radio" name="trip-type" id="one-type-input">
+					<label for="one-type-input" class="trip-type one-type">One Way</label>
+
+					<input type="radio" name="trip-type" id="multi-type-input">
+					<label for="multi-type-input" class="trip-type multi-type">Multi City</label>
+
+					<div class="direction">
+
+						<div class="direction-from">
+							<div class="direction-label">From</div>
+							<input type="text" class="direction-from-input">
+						</div>
+
+						<div class="direction-to">
+							<div class="direction-label">To</div>
+							<input type="text" class="direction-to-input">
+						</div>
+
+					</div>
+
+					<div class="flight-options">
+
+						<div class="flight-option">
+
+							<input type="text" class="flight-departure" placeholder="Departure">
+
+							<input type="text" class="flight-return" placeholder="Return">
+
+							<div class="taveller-amount">
+								<div class="traveller-title">Infant</div>
+								<button class="red-traveler">-</button>
+								<div class="traveller-value">1</div>
+								<button class="inc-traveler">+</button>
+							</div>
+							
+
+							<div class="flight-class">
+								<select class="flight-class-select">
+									<option selected disabled>Economy</option>
+								</select>
+							</div>
+
+						</div>
+
+						<div class="flight-option">
+
+							<div class="taveller-amount">
+								<div class="traveller-title">Adult</div>
+								<button class="red-traveler">-</button>
+								<div class="traveller-value">1</div>
+								<button class="inc-traveler">+</button>
+							</div>
+
+							<div class="taveller-amount">
+								<div class="traveller-title">Child</div>
+								<button class="red-traveler">-</button>
+								<div class="traveller-value">1</div>
+								<button class="inc-traveler">+</button>
+							</div>
+
+							<button class="search-flight-btn">Serch Flight</button>
+						</div>
+
+					</div>
+
+					<a class="addtional-options" href="#">Addtional Options</a>
+				</div>
+				<input type="radio" name="search-type" id="search-cruise-type">
+				<div class="search-cruise">
+					
+					<div class="cruise-select-container">
+
+						<div class="destinations">
+							<select class="destinations-select">
+								<option disabled selected>Destinations</option>
+							</select>
+						</div>
+
+						<div class="departure-port">
+							<select class="departure-port-select">
+								<option disabled selected>Departure Port</option>
+							</select>
+						</div>
+
+						<div class="cruise-lines">
+							<select class="cruise-lines-select">
+								<option disabled selected>Cruise Lines</option>
+							</select>
+						</div>
+
+						<div class="cruise-ships">
+							<select class="cruise-ships-select">
+								<option disabled selected>Cruise Ships</option>
+							</select>
+						</div>
+
+						<div class="dates-container">
+							<input type="text" class="cruise-date" placeholder="Dates">
+							<div class="cruise-length-container">
+								<select class="cruise-length-select">
+									<option disabled selected>Length</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="cruise-btn-container">
+							<button class="cruise-reset-btn">Reset</button>
+							<button class="cruise-seearch-btn">Search Cruise</button>
+						</div>
+
+					</div>
+				</div>
+				<input type="radio" name="search-type" id="search-hotel-type">
+				<div class="search-hotel">
+					
+					<input type="text" class="hotel-location" placeholder="City, Location or Airport">
+
+					<input type="text" class="hotel-departure hotel-input" placeholder="Depararture">
+
+					<input type="text" class="hotel-return hotel-input" placeholder="Return">
+
+					<select class="hotel-room hotel-input">
+						<option disabled selected>Room</option>
+					</select>
+
+					<div class="hotel-taveller-amount">
+						<div class="traveller-title">Adult</div>
+						<button class="red-traveler">-</button>
+						<div class="traveller-value">1</div>
+						<button class="inc-traveler">+</button>
+					</div>
+
+					<div class="hotel-taveller-amount">
+						<div class="traveller-title">Child</div>
+						<button class="red-traveler">-</button>
+						<div class="traveller-value">1</div>
+						<button class="inc-traveler">+</button>
+					</div>
+
+					<button class="search-hotel-btn">Search Hotel</button>
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<section class="advantage advantage-search13">
+		<h2 class="container">Awesome desination</h2>
+		
+		<div class="average-container container">
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/hotel-adv-ico.png" alt="">
+					<div class="advantage-title">best hotels</div>
+					<button class="advantage-btn">book rooms now</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/shild-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+			
+			<div class="advantage-carg">
+				<div class="advantage-carg_img">
+					<img class="advantage_img" src="img/adv-ico.png">
+				</div>
+				<div class="advantage-description">
+					<img class="advantage-ico" src="img/prise-adv-ico.png" alt="">
+					<div class="advantage-title">secure booking</div>
+					<button class="advantage-btn">secure booking</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="latest-offer latest-offer-search13">
+		<h2>latest offer</h2>
+		<div class="offer-container">
+
+			<button class="to-left"></button>
+			<button class="to-right"></button>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+
+			<div class="offer-card">
+				<div class="price-cont">
+					<div class="offer-price">$300.00</div>
+					<div class="offer-sale">30%off</div>
+				</div>
+				<div class="offer-img"></div>
+				<div class="offer-title">iseland</div>
+				<a href="#" class="see-tour-details">see tour details ></a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+
+		<div class="footer-container container">
+
+			<div class="footer-section nav-footer-section">
+				<h2>navigation</h2>
+				<nav class="nav-footer">
+					<a href="#">Home</a>
+					<a href="#">Tours</a>
+					<a href="#">Special Offer</a>
+					<a href="#">Where We Go</a>
+					<a href="#">Contact us</a>
+				</nav>
+			</div>
+
+			<div class="footer-section trip-footer-section">
+				<h2>recent trip</h2>
+				<nav class="trip-nav">
+					<a href="#">USA</a>
+					<a href="#">UK</a>
+					<a href="#">BANG KOK</a>
+					<a href="#">UAE</a>
+					<a href="#">THAILAND</a>
+				</nav>
+			</div>
+
+			<div class="footer-section gallery-footer-section">
+				<h2>tour gallery</h2>
+				<div class="galety-container">
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+					<div><img src="img/bg-offer.png" alt=""></div>
+				</div>
+			</div>
+
+			<div class="footer-section addres-footer-section">
+				<h2>addres</h2>
+				<p>
+					Address : Area<br>
+					Phone : 0000 000 0000<br>
+					Email : info@site.com
+				</p>
+			</div>
+
+		</div>
+	</footer>
+	
+	<script src="lib/js/jquery-3.3.1.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
