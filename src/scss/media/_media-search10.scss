@@ -281,6 +281,9 @@
 		width: 75%;
 		margin-right: 0;
 	}
+	.travellers-amount:not(:last-child) {
+		margin-bottom: 10px;
+	}
 }
 
 @media all and (max-width: 550px) {
@@ -364,5 +367,8 @@
 		width: 60%;
 		margin-right: 30%;
 		margin-left: 0;	
-	}	
+	}
+	.airlines-input {
+		padding-left: 5px;
+	}
 }
